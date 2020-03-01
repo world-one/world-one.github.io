@@ -3,10 +3,13 @@
 <url> <loc>https://world-one.github.io/tags</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://world-one.github.io/categories</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://world-one.github.io/pages/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://world-one.github.io/posts/Gatsby.js</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://world-one.github.io/pages/contacts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://world-one.github.io/posts/Markdown</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://world-one.github.io/tag/language</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://world-one.github.io/tag/web-development</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://world-one.github.io/tag/react-js</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://world-one.github.io/category/language</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://world-one.github.io/category/library</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://world-one.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
