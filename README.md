@@ -1,2 +1,2 @@
-# <world-one.github.io>
+<world-one.github.io>
 
