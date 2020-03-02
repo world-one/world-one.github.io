@@ -1,9 +1,9 @@
-#github page blog
+# github page blog
 
-##library
+## library
 Gatsby
 
-##theme
+## theme
 gatsby-starter-lumen
 
 <https://world-one.github.io>
