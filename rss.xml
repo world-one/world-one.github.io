@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 Mar 2020 13:08:51 GMT</lastBuildDate><item><title><![CDATA[리액트로 다시 만들어보자]]></title><description><![CDATA[신입시절 만들었던 포트폴리오 사이트를 리액트로 다시 만들어보자!]]></description><link>https://world-one.github.io/posts/리액트로 다시 만들어보자</link><guid isPermaLink="false">https://world-one.github.io/posts/리액트로 다시 만들어보자</guid><pubDate>Sun, 08 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;신입시절 부족하지만 그나마 취업에 도움을 주었던 포트폴리오 사이트를 오랜만에 꺼내보았다.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 Mar 2020 13:09:49 GMT</lastBuildDate><item><title><![CDATA[리액트로 다시 만들어보자]]></title><description><![CDATA[신입시절 만들었던 포트폴리오 사이트를 리액트로 다시 만들어보자!]]></description><link>https://world-one.github.io/posts/리액트로 다시 만들어보자</link><guid isPermaLink="false">https://world-one.github.io/posts/리액트로 다시 만들어보자</guid><pubDate>Sun, 08 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;신입시절 부족하지만 그나마 취업에 도움을 주었던 포트폴리오 사이트를 오랜만에 꺼내보았다.&lt;br&gt;
 html tag는 그때 당시 웹표준에 맞춰 잘 배웠던 터라 지금과 비교해도 큰 차이는 없다.&lt;br&gt;
 다만 css나 class에서 차이가 생겼다.&lt;br&gt;
 게다가 비효율적인 부분도 많았으니…&lt;br&gt;
@@ -167,7 +167,8 @@ const Work = () =&amp;gt;(
 react.js도 실무를 들어가게 되면 분명 막히는 부분이 있겠지만&lt;br&gt;
 프로젝트를 진행함에 있어서 거부감은 없다. vue와는 다른 맛이 있다.&lt;br&gt;
 Svelt도 한번 사용해보고 싶지만, 실무에서 쓰는 곳이 얼마나 될지 모르겠다.&lt;br&gt;
-워낙 3대장들이 건재하니 말이다. &lt;/p&gt;</content:encoded></item><item><title><![CDATA[node 삭제후 설치( Mac OS )]]></title><description><![CDATA[노드 버전 관리는 위해 NVM으로 재설치 하기]]></description><link>https://world-one.github.io/posts/node 설치하기</link><guid isPermaLink="false">https://world-one.github.io/posts/node 설치하기</guid><pubDate>Wed, 04 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;예전에 php 버전 관리가 안되서 고생했던 적이 있었다.&lt;br&gt;
+워낙 3대장들이 건재하니 말이다.&lt;br&gt;
+나중에 기회가 되면 한번 만져봐야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[node 삭제후 설치( Mac OS )]]></title><description><![CDATA[노드 버전 관리는 위해 NVM으로 재설치 하기]]></description><link>https://world-one.github.io/posts/node 설치하기</link><guid isPermaLink="false">https://world-one.github.io/posts/node 설치하기</guid><pubDate>Wed, 04 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;예전에 php 버전 관리가 안되서 고생했던 적이 있었다.&lt;br&gt;
 그땐 어찌어찌 찾아서 다 지우고 homebrew로 재설치했던 기억이 난다.&lt;br&gt;
 다만 정리를 안해두어서 같은 상황이 생기면 또 한참 삽질하겠지…&lt;br&gt;
 node 버전관리를 위해 NVM을 설치하고 node를 설치해보겠다. &lt;/p&gt;
