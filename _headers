@@ -91,15 +91,6 @@
   Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
   Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6c16caf3796ede074647.js>; rel=preload; as=script
-/posts/repair-by-react
-  Link: </webpack-runtime-31022d0051034590deee.js>; rel=preload; as=script
-  Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
-  Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-171ffe191486f421f700.js>; rel=preload; as=script
-  Link: </app-d57784c782ff810c5444.js>; rel=preload; as=script
-  Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
-  Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6c16caf3796ede074647.js>; rel=preload; as=script
 /posts/react-setting
   Link: </webpack-runtime-31022d0051034590deee.js>; rel=preload; as=script
   Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
@@ -127,24 +118,6 @@
   Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
   Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6c16caf3796ede074647.js>; rel=preload; as=script
-/posts/about-php
-  Link: </webpack-runtime-31022d0051034590deee.js>; rel=preload; as=script
-  Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
-  Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-171ffe191486f421f700.js>; rel=preload; as=script
-  Link: </app-d57784c782ff810c5444.js>; rel=preload; as=script
-  Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
-  Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6c16caf3796ede074647.js>; rel=preload; as=script
-/posts/node 설치하기
-  Link: </webpack-runtime-31022d0051034590deee.js>; rel=preload; as=script
-  Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
-  Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
-  Link: </netlify-identity-widget-171ffe191486f421f700.js>; rel=preload; as=script
-  Link: </app-d57784c782ff810c5444.js>; rel=preload; as=script
-  Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
-  Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-6c16caf3796ede074647.js>; rel=preload; as=script
 /pages/contacts/
   Link: </webpack-runtime-31022d0051034590deee.js>; rel=preload; as=script
   Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
@@ -164,6 +137,33 @@
   Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-6c16caf3796ede074647.js>; rel=preload; as=script
 /posts/AWS
+  Link: </webpack-runtime-31022d0051034590deee.js>; rel=preload; as=script
+  Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
+  Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-171ffe191486f421f700.js>; rel=preload; as=script
+  Link: </app-d57784c782ff810c5444.js>; rel=preload; as=script
+  Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
+  Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6c16caf3796ede074647.js>; rel=preload; as=script
+/posts/about-php
+  Link: </webpack-runtime-31022d0051034590deee.js>; rel=preload; as=script
+  Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
+  Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-171ffe191486f421f700.js>; rel=preload; as=script
+  Link: </app-d57784c782ff810c5444.js>; rel=preload; as=script
+  Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
+  Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6c16caf3796ede074647.js>; rel=preload; as=script
+/posts/repair-by-react
+  Link: </webpack-runtime-31022d0051034590deee.js>; rel=preload; as=script
+  Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
+  Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
+  Link: </netlify-identity-widget-171ffe191486f421f700.js>; rel=preload; as=script
+  Link: </app-d57784c782ff810c5444.js>; rel=preload; as=script
+  Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
+  Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-6c16caf3796ede074647.js>; rel=preload; as=script
+/posts/node 설치하기
   Link: </webpack-runtime-31022d0051034590deee.js>; rel=preload; as=script
   Link: </styles-202e1dd43dc66df3b3e9.js>; rel=preload; as=script
   Link: </commons-4e41338fa064a43722c9.js>; rel=preload; as=script
