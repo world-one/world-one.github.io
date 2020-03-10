@@ -1,4 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 08 Mar 2020 13:09:49 GMT</lastBuildDate><item><title><![CDATA[리액트로 다시 만들어보자]]></title><description><![CDATA[신입시절 만들었던 포트폴리오 사이트를 리액트로 다시 만들어보자!]]></description><link>https://world-one.github.io/posts/리액트로 다시 만들어보자</link><guid isPermaLink="false">https://world-one.github.io/posts/리액트로 다시 만들어보자</guid><pubDate>Sun, 08 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;신입시절 부족하지만 그나마 취업에 도움을 주었던 포트폴리오 사이트를 오랜만에 꺼내보았다.&lt;br&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 10 Mar 2020 08:24:08 GMT</lastBuildDate><item><title><![CDATA[내가 쓰고 있는 PHP에 대하여]]></title><description><![CDATA[PHP에 대하여 정리를 해보자]]></description><link>https://world-one.github.io/posts/about-php</link><guid isPermaLink="false">https://world-one.github.io/posts/about-php</guid><pubDate>Sun, 08 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;입문&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9E%85%EB%AC%B8&quot; aria-label=&quot;입문 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;입문&lt;/h3&gt;
+&lt;p&gt;처음에는 신입 웹 퍼블리셔로 스타트업에 취업을 했다.&lt;br&gt;
+다만 경영진들은 내가 정확히 뭘하는 사람인지 몰랐나보다.&lt;br&gt;
+내가 모르는걸 잔뜩 물어보았고,&lt;br&gt;
+그럴때마다 ‘나는 잘 모르겠다, 좀 찾아보겠다’ 라는 말을 할 수 밖에 없었다.&lt;br&gt;
+그때 당시 외주를 받기로 했던 회사에서 추가 계약을 하지 않아서 같이 뽑혔던 디자이너들이&lt;br&gt;
+해고 당했고, 내 역할이 좀 애매해지던 시기였다.&lt;br&gt;
+개발팀장은 나에게 백엔드 작업을 해보자며 권유했고&lt;br&gt;
+당시 개발팀장의 주 언어인 JAVA와 함께 공부하며 작업해야하는 PHP, 두가지 선택지가 있었다.&lt;br&gt;
+아무래도 PHP가 좀 더 배우기 용이할 것이라며 PHP를 추천했고,&lt;br&gt;
+그렇게 백엔드 개발자로 시작하게 되었다.   &lt;/p&gt;
+&lt;h3 id=&quot;php-뜻&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#php-%EB%9C%BB&quot; aria-label=&quot;php 뜻 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PHP 뜻&lt;/h3&gt;
+&lt;p&gt;처음에는 Personal Home Page Tools의 약자였으나
+PHP3.0이 발표 될때 PHP: Hypertext Preprocessor로 변경되었다.   &lt;/p&gt;
+&lt;h3 id=&quot;php-인식&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#php-%EC%9D%B8%EC%8B%9D&quot; aria-label=&quot;php 인식 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;PHP 인식&lt;/h3&gt;
+&lt;p&gt;구글링을 해보면 PHP에 대하여 부정적인 글들이 상당히 많이 나온다.&lt;br&gt;
+그런 글들을 보면 나도 불안감을 많이 느꼈다.&lt;br&gt;
+그럼에도 아직도 PHP를 쓰는 곳이 너무 많다. 생각보다 취업도 잘되는 것 같고…&lt;br&gt;
+버전업 될때마다 PHP의 성능도 엄청 좋아졌다고 한다.&lt;br&gt;
+php7에서 특히 그렇다고 하는데, 솔직히 그걸 느낄만큼 서비스가 지속된 적이 없다…&lt;br&gt;
+php8은 얼마나 좋아질지 기대가 된다.   &lt;/p&gt;
+&lt;h3 id=&quot;framework&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#framework&quot; aria-label=&quot;framework permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Framework&lt;/h3&gt;
+&lt;p&gt;애초에 PHP 작업을 Framework로 시작했다.&lt;br&gt;
+여러가지가 있지만 Codeigniter(CI)를 선택하여 API 서버를 만들어보았고&lt;br&gt;
+처음엔 뭘 잘모르고 MVC 패턴만 숙지하여 작업을 해나갔다.
+JWT토큰을 이용한 인증처리, GCM을 이용한 푸시메시지 전송 등
+새로운 세상이었다.&lt;br&gt;
+CI는 국내 커뮤니티가 잘 조성되어 있다.
+거기서 index.php 없애는 방법에 대한 글을 보고 문제를 해결한 기억이 있다.&lt;br&gt;
+가비아 독립몰을 구입해서 커스텀을 진행한 적이 있는데 고맙게도 CI로 제작되어 있어서&lt;br&gt;
+좀 더 수월하게 작업할 수 있었다.&lt;br&gt;
+그 이후로 이름이 가장 많이 거론되었던 Laravel을 사용해보았다.
+CI에 비하면 기본적으로 포함된게 많아서 좀 무거운 느낌이 들었지만&lt;br&gt;
+CI에서 쓰지 않는 네임스페이스를 사용한다던지( PSR 표준 ),
+Artisan 명령어나, 쿼리빌더는 작업을 참 편하게 할 수 있게 해준다.&lt;br&gt;
+아직도 못 써본 기능이 제법 많다.&lt;br&gt;
+거기에 blade나 vue.js까지, 프론트 작업에 대한 환경도 설정되어 있다.&lt;/p&gt;
+&lt;h3 id=&quot;앞으로&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%95%9E%EC%9C%BC%EB%A1%9C&quot; aria-label=&quot;앞으로 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;앞으로&lt;/h3&gt;
+&lt;p&gt;처음 개발팀장과 함께 PHP를 시작했을 때,&lt;br&gt;
+아무래도 JAVA로 작업을 해왔던 경험인지 엄청나게 빠르게 습득해서&lt;br&gt;
+마치 이전부터 계속 사용하던 언어마냥 만들어가는 걸 보며 감탄했었다.&lt;br&gt;
+지금와서 생각해보니, 단순히 JAVA개발자, PHP개발자같이 나눌 필요는 없는 것 같다.&lt;br&gt;
+개발자는 개발자고, 언어는 도구일 뿐..  너무 갇혀있지 말아야한다.&lt;br&gt;
+기본에 충실하다면 어떤 언어든 금방 배우지 않을까 하는 생각이 든다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[리액트로 다시 만들어보자]]></title><description><![CDATA[신입시절 만들었던 포트폴리오 사이트를 리액트로 다시 만들어보자!]]></description><link>https://world-one.github.io/posts/repair-by-react</link><guid isPermaLink="false">https://world-one.github.io/posts/repair-by-react</guid><pubDate>Sun, 08 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;신입시절 부족하지만 그나마 취업에 도움을 주었던 포트폴리오 사이트를 오랜만에 꺼내보았다.&lt;br&gt;
 html tag는 그때 당시 웹표준에 맞춰 잘 배웠던 터라 지금과 비교해도 큰 차이는 없다.&lt;br&gt;
 다만 css나 class에서 차이가 생겼다.&lt;br&gt;
 게다가 비효율적인 부분도 많았으니…&lt;br&gt;
@@ -162,13 +205,11 @@ const Work = () =&amp;gt;(
     -webkit-column-gap: 30px;
     column-gap: 30px;    
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;vue.js로 작업을 하다 보니(laravel의 blade도 있다.)
+&lt;p&gt;vue.js로 작업을 하다 보니(laravel의 blade도 있다.)&lt;br&gt;
 이제는 그냥 html작업을 하게 되었을때 뭔가 허전하다.&lt;br&gt;
 react.js도 실무를 들어가게 되면 분명 막히는 부분이 있겠지만&lt;br&gt;
 프로젝트를 진행함에 있어서 거부감은 없다. vue와는 다른 맛이 있다.&lt;br&gt;
-Svelt도 한번 사용해보고 싶지만, 실무에서 쓰는 곳이 얼마나 될지 모르겠다.&lt;br&gt;
-워낙 3대장들이 건재하니 말이다.&lt;br&gt;
-나중에 기회가 되면 한번 만져봐야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[node 삭제후 설치( Mac OS )]]></title><description><![CDATA[노드 버전 관리는 위해 NVM으로 재설치 하기]]></description><link>https://world-one.github.io/posts/node 설치하기</link><guid isPermaLink="false">https://world-one.github.io/posts/node 설치하기</guid><pubDate>Wed, 04 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;예전에 php 버전 관리가 안되서 고생했던 적이 있었다.&lt;br&gt;
+다음에는 요새 뜨고 있는 Svelt도 한번 써보도록 하자.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[node 삭제후 설치( Mac OS )]]></title><description><![CDATA[노드 버전 관리는 위해 NVM으로 재설치 하기]]></description><link>https://world-one.github.io/posts/node 설치하기</link><guid isPermaLink="false">https://world-one.github.io/posts/node 설치하기</guid><pubDate>Wed, 04 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;예전에 php 버전 관리가 안되서 고생했던 적이 있었다.&lt;br&gt;
 그땐 어찌어찌 찾아서 다 지우고 homebrew로 재설치했던 기억이 난다.&lt;br&gt;
 다만 정리를 안해두어서 같은 상황이 생기면 또 한참 삽질하겠지…&lt;br&gt;
 node 버전관리를 위해 NVM을 설치하고 node를 설치해보겠다. &lt;/p&gt;
@@ -441,7 +482,7 @@ new Dotenv({
   systemvars: true, // load all the predefined &amp;#39;process.env&amp;#39; variables which will trump anything local per dotenv specs.
   silent: true, // hide any errors
   defaults: false // load &amp;#39;.env.defaults&amp;#39; as the default values if empty.
-}),&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[도메인 연결하기(nginx)]]></title><description><![CDATA[가상호스트 및 https 설정하기(nginx + php-fpm)]]></description><link>https://world-one.github.io/posts/도메인-연결하기(nginx)</link><guid isPermaLink="false">https://world-one.github.io/posts/도메인-연결하기(nginx)</guid><pubDate>Mon, 02 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;lets Encrypt을 이용하여 무료인증서를 발급받아서 https 설정을 해보자&lt;/p&gt;
+}),&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[도메인 연결하기(nginx)]]></title><description><![CDATA[가상호스트 및 https 설정하기(nginx + php-fpm)]]></description><link>https://world-one.github.io/posts/domain-connet(nginx)</link><guid isPermaLink="false">https://world-one.github.io/posts/domain-connet(nginx)</guid><pubDate>Mon, 02 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;lets Encrypt을 이용하여 무료인증서를 발급받아서 https 설정을 해보자&lt;/p&gt;
 &lt;h2 id=&quot;lets-encrypt&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#lets-encrypt&quot; aria-label=&quot;lets encrypt permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;lets Encrypt&lt;/h2&gt;
 &lt;p&gt;비영리 단체라고 한다. 무료지만 3개월에 한번씩 갱신해줘야하는 번거로움이 있다.&lt;br&gt;
 크론탭을 이용하여 자동화 시키는 방법이 있다.&lt;br&gt;
@@ -716,36 +757,7 @@ net.ipv6.conf.lo.disable_ipv6 = 1&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sysctl -p
 cat /proc/sys/net/ipv6/conf/all/disable_ipv6&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;해당 내용은 아래 포스팅을 보며 따라한 것을 필요한 것만 정리해둔 것입니다.&lt;br&gt;
-&lt;a href=&quot;https://blog.lael.be/post/8319&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://blog.lael.be/post/8319&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby.js]]></title><description><![CDATA[정적사이트 생성기 Gatsby]]></description><link>https://world-one.github.io/posts/Gatsby.js</link><guid isPermaLink="false">https://world-one.github.io/posts/Gatsby.js</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;github page를 이용한 정적 사이트로 기술용 블로그를 만들자라는 결심을 하고 설치를 했지만 방치한지 몇 주가 지났다.&lt;/p&gt;
-&lt;p&gt;처음 막연하게 검색을 해보니 Jekyll, Gatsby가 눈에 띄었다.&lt;/p&gt;
-&lt;p&gt;둘 다 마크다운 언어로 포스팅을 할 수 있었으면 테마도 쉽게 적용할 수 있었다.&lt;/p&gt;
-&lt;p&gt;react에 대한 관심이 있었던 터라 Gatsby로 웹사이트를 구성해보았다.&lt;/p&gt;
-&lt;p&gt;우선은 별도의 수정 없이 있는 그대로 테마만 적용하여 사용해보려한다.&lt;/p&gt;
-&lt;h3 id=&quot;install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install&quot; aria-label=&quot;install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;install&lt;/h3&gt;
-&lt;p&gt;gatsby-starter-lumen 테마가 단순하니 보기 좋아 무작정 설치를 했다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npx gatsby new gatsby-starter-lumen https://github.com/alxshelepenok/gatsby-starter-lumen
-cd gatsby-starter-lumen
-gatsby develop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;설치가 완료되면 로컬환경에서 돌려볼 수 있다.&lt;br&gt;
-gatsby를 따로 설치 하진 않았기에 yarn으로 실행했다.    &lt;/p&gt;
-&lt;p&gt;package.json에서 보면 여러 실행 명령어가 있다.&lt;br&gt;
-이 중 develop, deploy 정도만 사용할 듯 싶다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;scripts&amp;quot;: {
-    &amp;quot;develop&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby develop&amp;quot;,
-    &amp;quot;build&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build&amp;quot;,
-    &amp;quot;deploy&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public -b master&amp;quot;,
-    &amp;quot;clean&amp;quot;: &amp;quot;rimraf .cache public&amp;quot;,
-    &amp;quot;flow&amp;quot;: &amp;quot;flow&amp;quot;,
-    &amp;quot;lint:js&amp;quot;: &amp;quot;eslint --cache --ext .js,.jsx .&amp;quot;,
-    &amp;quot;lint:scss&amp;quot;: &amp;quot;stylelint \&amp;quot;src/**/*.scss\&amp;quot;&amp;quot;,
-    &amp;quot;lint&amp;quot;: &amp;quot;concurrently \&amp;quot;yarn run lint:js\&amp;quot; \&amp;quot;yarn run lint:scss\&amp;quot; \&amp;quot;yarn flow\&amp;quot;&amp;quot;,
-    &amp;quot;test&amp;quot;: &amp;quot;jest --config ./jest/jest-config.js&amp;quot;,
-    &amp;quot;test:coverage&amp;quot;: &amp;quot;jest --coverage --config ./jest/jest-config.js&amp;quot;,
-    &amp;quot;test:watch&amp;quot;: &amp;quot;jest --watch --config ./jest/jest-config.js&amp;quot;
-  },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;deploy를 실행하니 알아서 github에 commit되고 gitpage가 세팅된다.&lt;/p&gt;
-&lt;p&gt;몇 주 전에 세팅했던 터라 빼먹은게 있을거 같다. 다시 만들게 되면 좀 헤맬지도 모르겠다.&lt;/p&gt;
-&lt;p&gt;개별 프로젝트를 만들어서 정적사이트 제작시 gitpage에 대해 정리를 해봐야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Markdown]]></title><description><![CDATA[마크다운 언어에 대해 정리해보자!]]></description><link>https://world-one.github.io/posts/Markdown</link><guid isPermaLink="false">https://world-one.github.io/posts/Markdown</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;a href=&quot;https://blog.lael.be/post/8319&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://blog.lael.be/post/8319&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Markdown]]></title><description><![CDATA[마크다운 언어에 대해 정리해보자!]]></description><link>https://world-one.github.io/posts/Markdown</link><guid isPermaLink="false">https://world-one.github.io/posts/Markdown</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#header&quot;&gt;header&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#list&quot;&gt;list&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#blockquote&quot;&gt;blockquote&lt;/a&gt;&lt;/li&gt;
@@ -845,4 +857,33 @@ __strong__
 &lt;em&gt;em&lt;/em&gt;&lt;br&gt;
 &lt;strong&gt;strong&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;strong&lt;/strong&gt;&lt;br&gt;
-&lt;del&gt;del&lt;/del&gt;   &lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;del&gt;del&lt;/del&gt;   &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby.js]]></title><description><![CDATA[정적사이트 생성기 Gatsby]]></description><link>https://world-one.github.io/posts/Gatsby.js</link><guid isPermaLink="false">https://world-one.github.io/posts/Gatsby.js</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;github page를 이용한 정적 사이트로 기술용 블로그를 만들자라는 결심을 하고 설치를 했지만 방치한지 몇 주가 지났다.&lt;/p&gt;
+&lt;p&gt;처음 막연하게 검색을 해보니 Jekyll, Gatsby가 눈에 띄었다.&lt;/p&gt;
+&lt;p&gt;둘 다 마크다운 언어로 포스팅을 할 수 있었으면 테마도 쉽게 적용할 수 있었다.&lt;/p&gt;
+&lt;p&gt;react에 대한 관심이 있었던 터라 Gatsby로 웹사이트를 구성해보았다.&lt;/p&gt;
+&lt;p&gt;우선은 별도의 수정 없이 있는 그대로 테마만 적용하여 사용해보려한다.&lt;/p&gt;
+&lt;h3 id=&quot;install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install&quot; aria-label=&quot;install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;install&lt;/h3&gt;
+&lt;p&gt;gatsby-starter-lumen 테마가 단순하니 보기 좋아 무작정 설치를 했다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npx gatsby new gatsby-starter-lumen https://github.com/alxshelepenok/gatsby-starter-lumen
+cd gatsby-starter-lumen
+gatsby develop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;설치가 완료되면 로컬환경에서 돌려볼 수 있다.&lt;br&gt;
+gatsby를 따로 설치 하진 않았기에 yarn으로 실행했다.    &lt;/p&gt;
+&lt;p&gt;package.json에서 보면 여러 실행 명령어가 있다.&lt;br&gt;
+이 중 develop, deploy 정도만 사용할 듯 싶다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;scripts&amp;quot;: {
+    &amp;quot;develop&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby develop&amp;quot;,
+    &amp;quot;build&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build&amp;quot;,
+    &amp;quot;deploy&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public -b master&amp;quot;,
+    &amp;quot;clean&amp;quot;: &amp;quot;rimraf .cache public&amp;quot;,
+    &amp;quot;flow&amp;quot;: &amp;quot;flow&amp;quot;,
+    &amp;quot;lint:js&amp;quot;: &amp;quot;eslint --cache --ext .js,.jsx .&amp;quot;,
+    &amp;quot;lint:scss&amp;quot;: &amp;quot;stylelint \&amp;quot;src/**/*.scss\&amp;quot;&amp;quot;,
+    &amp;quot;lint&amp;quot;: &amp;quot;concurrently \&amp;quot;yarn run lint:js\&amp;quot; \&amp;quot;yarn run lint:scss\&amp;quot; \&amp;quot;yarn flow\&amp;quot;&amp;quot;,
+    &amp;quot;test&amp;quot;: &amp;quot;jest --config ./jest/jest-config.js&amp;quot;,
+    &amp;quot;test:coverage&amp;quot;: &amp;quot;jest --coverage --config ./jest/jest-config.js&amp;quot;,
+    &amp;quot;test:watch&amp;quot;: &amp;quot;jest --watch --config ./jest/jest-config.js&amp;quot;
+  },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;deploy를 실행하니 알아서 github에 commit되고 gitpage가 세팅된다.&lt;/p&gt;
+&lt;p&gt;몇 주 전에 세팅했던 터라 빼먹은게 있을거 같다. 다시 만들게 되면 좀 헤맬지도 모르겠다.&lt;/p&gt;
+&lt;p&gt;개별 프로젝트를 만들어서 정적사이트 제작시 gitpage에 대해 정리를 해봐야겠다.&lt;/p&gt;</content:encoded></item></channel></rss>
