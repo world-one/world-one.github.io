@@ -1,4 +1,62 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 16 Mar 2020 04:48:46 GMT</lastBuildDate><item><title><![CDATA[Typescript with CRA]]></title><description><![CDATA[React(CRA) 세팅과 함께 Typescript 사용하기]]></description><link>https://world-one.github.io/posts/about-Typescript-with-React</link><guid isPermaLink="false">https://world-one.github.io/posts/about-Typescript-with-React</guid><pubDate>Fri, 13 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;typescript란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#typescript%EB%9E%80&quot; aria-label=&quot;typescript란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Typescript란&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 18 Mar 2020 04:39:35 GMT</lastBuildDate><item><title><![CDATA[Semantic ui react]]></title><description><![CDATA[semantic UI 사용해보기]]></description><link>https://world-one.github.io/posts/semantic-ui-react</link><guid isPermaLink="false">https://world-one.github.io/posts/semantic-ui-react</guid><pubDate>Tue, 17 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;UI library 중에서는 Bootstrap을 주로 썼었다.&lt;br&gt;
+예전에 한번 지나가듯 들어본 Semantic UI가 떠올랐다.&lt;br&gt;
+찾아보니 jQuery를 뺀 semantic ui react가 있어서 바로 설치 후 적용해보았다.&lt;/p&gt;
+&lt;h4 id=&quot;사용법&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%82%AC%EC%9A%A9%EB%B2%95&quot; aria-label=&quot;사용법 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;사용법&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://semantic-ui.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://semantic-ui.com/&lt;/a&gt;
+공식 사이트에 가면 정리가 잘 되어 있다.&lt;/p&gt;
+&lt;p&gt;class에 기본적으로 ui를 붙이는 것 같다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;div class=&amp;quot;ui container&amp;quot;&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;Elements&lt;/li&gt;
+&lt;li&gt;Colletcionts&lt;/li&gt;
+&lt;li&gt;Views&lt;/li&gt;
+&lt;li&gt;Modules&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Elements는 button, container, header, label 등&lt;br&gt;
+각 구성요소들을 포함되어 있다.   &lt;/p&gt;
+&lt;p&gt;Colletions는 Grid, Menu, Form 등&lt;br&gt;
+전체적인 틀을 잡을 때 필요한 부분이다.   &lt;/p&gt;
+&lt;p&gt;Views는 card, item 등 특정 용도의 스타일을 분류되어 있다.   &lt;/p&gt;
+&lt;p&gt;Modules는 jQuery를 이용하여 효과를 주는 dropbox, modal, accordion 등이 있다.&lt;/p&gt;
+&lt;h4 id=&quot;react&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#react&quot; aria-label=&quot;react permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;react&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://react.semantic-ui.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://react.semantic-ui.com/&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn add semantic-ui-react&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;semantic ui의 css파일은 그냥 다운 받아서 min 파일만 추가해주었다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import &amp;#39;#/vendor/semantic-ui/semantic.min.css&amp;#39;;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;태그에 className을 추가해주는 방법도 있지만, semantic-ui-react에서 제공한는 방식으로 해보겠다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import { Container, Button } from &amp;#39;semantic-ui-react&amp;#39;
+
+&amp;lt;Container&amp;gt; //최대 너비 제한
+&amp;lt;Button&amp;gt;버튼&amp;lt;/Button&amp;gt;
+&amp;lt;/Container&amp;gt;
+
+&amp;lt;Segment&amp;gt;
+
+&amp;lt;/Segment&amp;gt; //관련된 컨텐츠 묶음
+
+&amp;lt;Grid celled doubling columns={5}&amp;gt;
+  &amp;lt;Grid.Row&amp;gt;
+    &amp;lt;Grid.Column textAlign=&amp;quot;center&amp;quot;&amp;gt;
+    &amp;lt;Grid.Column&amp;gt;
+  &amp;lt;/Grid.Row&amp;gt;
+&amp;lt;/Grid&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Bootstrap과는 달리 여백에 관한 class는 따로 없는 듯 하다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[React gh page setting]]></title><description><![CDATA[github page에서 배포해보기]]></description><link>https://world-one.github.io/posts/react-gh-page</link><guid isPermaLink="false">https://world-one.github.io/posts/react-gh-page</guid><pubDate>Mon, 16 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;github page에서 react로 만든 결과물을 배포해보자.&lt;br&gt;
+그냥 빌드 결과물을 올리고 page를 활성화 시키면 되는줄 알았은데 몇가지 설정이 필요해보인다.&lt;/p&gt;
+&lt;h4 id=&quot;gh-pages-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gh-pages-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;gh pages 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;gh-pages 설치&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn add -D gh-pages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;packagejson-수정&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#packagejson-%EC%88%98%EC%A0%95&quot; aria-label=&quot;packagejson 수정 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;package.json 수정&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;homepage&amp;quot;: &amp;quot;https://world-one.github.io/react-toy/&amp;quot;
+&amp;quot;scripts&amp;quot;: {
+  &amp;quot;predeploy&amp;quot;: &amp;quot;npm run build&amp;quot;,
+  &amp;quot;deploy&amp;quot;: &amp;quot;gh-pages -d build&amp;quot;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;router-문제&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#router-%EB%AC%B8%EC%A0%9C&quot; aria-label=&quot;router 문제 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;router 문제&lt;/h4&gt;
+&lt;p&gt;router가 제대로 동작하지 않아서 좀 찾아봤다.&lt;br&gt;
+react-router-dom에 제공하는 HashRouter가 있다.&lt;br&gt;
+BrowserRouter를 그걸로 바꿔주면 된다.   &lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://world-one.github.io/react-toy/#/weather&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://world-one.github.io/react-toy/#/weather&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;이런식으로 서버를 거치지 않고 라우팅 된다.&lt;br&gt;
+api쪽에서 혹시 cors 문제가 생길까 걱정했지만 지금은 문제없이 데이터를 가져온다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Typescript with CRA]]></title><description><![CDATA[React(CRA) 세팅과 함께 Typescript 사용하기]]></description><link>https://world-one.github.io/posts/about-Typescript-with-React</link><guid isPermaLink="false">https://world-one.github.io/posts/about-Typescript-with-React</guid><pubDate>Fri, 13 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;typescript란&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#typescript%EB%9E%80&quot; aria-label=&quot;typescript란 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Typescript란&lt;/h3&gt;
 &lt;p&gt;이름에 담겨 있듯 가장 큰 특성은 타입을 명확하게 지정할 수 있다는 것이다.&lt;br&gt;
 Javascript의 모든 것을 그대로 사용가능하다. 별도의 언어가 아니라 상위 버전이라고 생각하면 된다.&lt;br&gt;
 마이크로소프트(2012년 발표)에서 만든 것으로 VSC에서 사용할 경우 자체에서 오류를 바로바로 표시해주는 등 매우 편리하다.   &lt;/p&gt;
@@ -164,6 +222,10 @@ const Header = ({menuList}:any, {name, number}:info) =&amp;gt;{
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;menuList는 menu[], array, object 다 에러가 난다…&lt;br&gt;
 일단 any로 해두고 나중에 다른 방법이 있으면 수정해야겠다.   &lt;/p&gt;
+&lt;p&gt;Router에 Props 넘길때 그냥 넘기면 안넘어간다. 아래와 같이 render를 이용해 컴포넌트에 props를 넘겨주면 된다.   &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;Switch&amp;gt;
+  &amp;lt;Route exact path=&amp;quot;/&amp;quot;  render={ (props) =&amp;gt; &amp;lt;Home {...props} menuList={this.menuList()} /&amp;gt; } /&amp;gt;
+  &amp;lt;Route exact path=&amp;quot;/Weather&amp;quot; component={Weather}/&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4 id=&quot;weather-페이지-만들기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#weather-%ED%8E%98%EC%9D%B4%EC%A7%80-%EB%A7%8C%EB%93%A4%EA%B8%B0&quot; aria-label=&quot;weather 페이지 만들기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;weather 페이지 만들기&lt;/h4&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;interface State{
     info : info
@@ -257,23 +319,7 @@ PHP에서도 타입을 미리 정하거나 하진 않아서 확실히 낯설었�
 항상 소규모의 작업만 해왔기에 필요성을 크게 느끼진 못했었다.&lt;br&gt;
 대규모 프로젝트와 많은 이와 협업을 하는 환경에서는 디버그와 테스트 시간을 줄이는데&lt;br&gt;
 큰 도움이 되지 않을까 싶다.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://world-one.github.io/react-toy/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://world-one.github.io/react-toy/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[React gh page setting]]></title><description><![CDATA[github page에서 배포해보기]]></description><link>https://world-one.github.io/posts/react-gh-page</link><guid isPermaLink="false">https://world-one.github.io/posts/react-gh-page</guid><pubDate>Fri, 13 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;github page에서 react로 만든 결과물을 배포해보자.&lt;br&gt;
-그냥 빌드 결과물을 올리고 page를 활성화 시키면 되는줄 알았은데 몇가지 설정이 필요해보인다.&lt;/p&gt;
-&lt;h4 id=&quot;gh-pages-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#gh-pages-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;gh pages 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;gh-pages 설치&lt;/h4&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn add -D gh-pages&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4 id=&quot;packagejson-수정&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#packagejson-%EC%88%98%EC%A0%95&quot; aria-label=&quot;packagejson 수정 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;package.json 수정&lt;/h4&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;homepage&amp;quot;: &amp;quot;https://world-one.github.io/react-toy/&amp;quot;
-&amp;quot;scripts&amp;quot;: {
-  &amp;quot;predeploy&amp;quot;: &amp;quot;npm run build&amp;quot;,
-  &amp;quot;deploy&amp;quot;: &amp;quot;gh-pages -d build&amp;quot;
-}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h4 id=&quot;router-문제&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#router-%EB%AC%B8%EC%A0%9C&quot; aria-label=&quot;router 문제 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;router 문제&lt;/h4&gt;
-&lt;p&gt;router가 제대로 동작하지 않아서 좀 찾아봤다.&lt;br&gt;
-react-router-dom에 제공하는 HashRouter가 있다.&lt;br&gt;
-BrowserRouter를 그걸로 바꿔주면 된다.   &lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://world-one.github.io/react-toy/#/weather&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://world-one.github.io/react-toy/#/weather&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;이런식으로 서버를 거치지 않고 라우팅 된다.&lt;br&gt;
-api쪽에서 혹시 cors 문제가 생길까 걱정했지만 지금은 문제없이 데이터를 가져온다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Docker가 뭐지?]]></title><description><![CDATA[Docker는 무엇인지, 어떻게 쓰이는지?]]></description><link>https://world-one.github.io/posts/about-docker</link><guid isPermaLink="false">https://world-one.github.io/posts/about-docker</guid><pubDate>Thu, 12 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;docker&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#docker&quot; aria-label=&quot;docker permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker???&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://world-one.github.io/react-toy/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://world-one.github.io/react-toy/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Docker가 뭐지?]]></title><description><![CDATA[Docker는 무엇인지, 어떻게 쓰이는지?]]></description><link>https://world-one.github.io/posts/about-docker</link><guid isPermaLink="false">https://world-one.github.io/posts/about-docker</guid><pubDate>Thu, 12 Mar 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;docker&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#docker&quot; aria-label=&quot;docker permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker???&lt;/h3&gt;
 &lt;p&gt;실무에선 한번도 쓰지 않았다.&lt;br&gt;
 어떤 용도로 쓰는지도 모르고, 다만 한번씩 구인시장에선 어떤 기술을 요구하나 싶어서&lt;br&gt;
 구직사이트를 둘러보다보면 Docker라는 단어가 심심찮게 등장했다.&lt;br&gt;
@@ -1060,36 +1106,7 @@ net.ipv6.conf.lo.disable_ipv6 = 1&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sysctl -p
 cat /proc/sys/net/ipv6/conf/all/disable_ipv6&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;해당 내용은 아래 포스팅을 보며 따라한 것을 필요한 것만 정리해둔 것입니다.&lt;br&gt;
-&lt;a href=&quot;https://blog.lael.be/post/8319&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://blog.lael.be/post/8319&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby.js]]></title><description><![CDATA[정적사이트 생성기 Gatsby]]></description><link>https://world-one.github.io/posts/Gatsby.js</link><guid isPermaLink="false">https://world-one.github.io/posts/Gatsby.js</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;github page를 이용한 정적 사이트로 기술용 블로그를 만들자라는 결심을 하고 설치를 했지만 방치한지 몇 주가 지났다.&lt;/p&gt;
-&lt;p&gt;처음 막연하게 검색을 해보니 Jekyll, Gatsby가 눈에 띄었다.&lt;/p&gt;
-&lt;p&gt;둘 다 마크다운 언어로 포스팅을 할 수 있었으면 테마도 쉽게 적용할 수 있었다.&lt;/p&gt;
-&lt;p&gt;react에 대한 관심이 있었던 터라 Gatsby로 웹사이트를 구성해보았다.&lt;/p&gt;
-&lt;p&gt;우선은 별도의 수정 없이 있는 그대로 테마만 적용하여 사용해보려한다.&lt;/p&gt;
-&lt;h3 id=&quot;install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install&quot; aria-label=&quot;install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;install&lt;/h3&gt;
-&lt;p&gt;gatsby-starter-lumen 테마가 단순하니 보기 좋아 무작정 설치를 했다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npx gatsby new gatsby-starter-lumen https://github.com/alxshelepenok/gatsby-starter-lumen
-cd gatsby-starter-lumen
-gatsby develop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;설치가 완료되면 로컬환경에서 돌려볼 수 있다.&lt;br&gt;
-gatsby를 따로 설치 하진 않았기에 yarn으로 실행했다.    &lt;/p&gt;
-&lt;p&gt;package.json에서 보면 여러 실행 명령어가 있다.&lt;br&gt;
-이 중 develop, deploy 정도만 사용할 듯 싶다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;scripts&amp;quot;: {
-    &amp;quot;develop&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby develop&amp;quot;,
-    &amp;quot;build&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build&amp;quot;,
-    &amp;quot;deploy&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public -b master&amp;quot;,
-    &amp;quot;clean&amp;quot;: &amp;quot;rimraf .cache public&amp;quot;,
-    &amp;quot;flow&amp;quot;: &amp;quot;flow&amp;quot;,
-    &amp;quot;lint:js&amp;quot;: &amp;quot;eslint --cache --ext .js,.jsx .&amp;quot;,
-    &amp;quot;lint:scss&amp;quot;: &amp;quot;stylelint \&amp;quot;src/**/*.scss\&amp;quot;&amp;quot;,
-    &amp;quot;lint&amp;quot;: &amp;quot;concurrently \&amp;quot;yarn run lint:js\&amp;quot; \&amp;quot;yarn run lint:scss\&amp;quot; \&amp;quot;yarn flow\&amp;quot;&amp;quot;,
-    &amp;quot;test&amp;quot;: &amp;quot;jest --config ./jest/jest-config.js&amp;quot;,
-    &amp;quot;test:coverage&amp;quot;: &amp;quot;jest --coverage --config ./jest/jest-config.js&amp;quot;,
-    &amp;quot;test:watch&amp;quot;: &amp;quot;jest --watch --config ./jest/jest-config.js&amp;quot;
-  },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;deploy를 실행하니 알아서 github에 commit되고 gitpage가 세팅된다.&lt;/p&gt;
-&lt;p&gt;몇 주 전에 세팅했던 터라 빼먹은게 있을거 같다. 다시 만들게 되면 좀 헤맬지도 모르겠다.&lt;/p&gt;
-&lt;p&gt;개별 프로젝트를 만들어서 정적사이트 제작시 gitpage에 대해 정리를 해봐야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Markdown]]></title><description><![CDATA[마크다운 언어에 대해 정리해보자!]]></description><link>https://world-one.github.io/posts/Markdown</link><guid isPermaLink="false">https://world-one.github.io/posts/Markdown</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;a href=&quot;https://blog.lael.be/post/8319&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://blog.lael.be/post/8319&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Markdown]]></title><description><![CDATA[마크다운 언어에 대해 정리해보자!]]></description><link>https://world-one.github.io/posts/Markdown</link><guid isPermaLink="false">https://world-one.github.io/posts/Markdown</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#header&quot;&gt;header&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#list&quot;&gt;list&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#blockquote&quot;&gt;blockquote&lt;/a&gt;&lt;/li&gt;
@@ -1189,4 +1206,33 @@ __strong__
 &lt;em&gt;em&lt;/em&gt;&lt;br&gt;
 &lt;strong&gt;strong&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;strong&lt;/strong&gt;&lt;br&gt;
-&lt;del&gt;del&lt;/del&gt;   &lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;del&gt;del&lt;/del&gt;   &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby.js]]></title><description><![CDATA[정적사이트 생성기 Gatsby]]></description><link>https://world-one.github.io/posts/Gatsby.js</link><guid isPermaLink="false">https://world-one.github.io/posts/Gatsby.js</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;github page를 이용한 정적 사이트로 기술용 블로그를 만들자라는 결심을 하고 설치를 했지만 방치한지 몇 주가 지났다.&lt;/p&gt;
+&lt;p&gt;처음 막연하게 검색을 해보니 Jekyll, Gatsby가 눈에 띄었다.&lt;/p&gt;
+&lt;p&gt;둘 다 마크다운 언어로 포스팅을 할 수 있었으면 테마도 쉽게 적용할 수 있었다.&lt;/p&gt;
+&lt;p&gt;react에 대한 관심이 있었던 터라 Gatsby로 웹사이트를 구성해보았다.&lt;/p&gt;
+&lt;p&gt;우선은 별도의 수정 없이 있는 그대로 테마만 적용하여 사용해보려한다.&lt;/p&gt;
+&lt;h3 id=&quot;install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install&quot; aria-label=&quot;install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;install&lt;/h3&gt;
+&lt;p&gt;gatsby-starter-lumen 테마가 단순하니 보기 좋아 무작정 설치를 했다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npx gatsby new gatsby-starter-lumen https://github.com/alxshelepenok/gatsby-starter-lumen
+cd gatsby-starter-lumen
+gatsby develop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;설치가 완료되면 로컬환경에서 돌려볼 수 있다.&lt;br&gt;
+gatsby를 따로 설치 하진 않았기에 yarn으로 실행했다.    &lt;/p&gt;
+&lt;p&gt;package.json에서 보면 여러 실행 명령어가 있다.&lt;br&gt;
+이 중 develop, deploy 정도만 사용할 듯 싶다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;scripts&amp;quot;: {
+    &amp;quot;develop&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby develop&amp;quot;,
+    &amp;quot;build&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build&amp;quot;,
+    &amp;quot;deploy&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public -b master&amp;quot;,
+    &amp;quot;clean&amp;quot;: &amp;quot;rimraf .cache public&amp;quot;,
+    &amp;quot;flow&amp;quot;: &amp;quot;flow&amp;quot;,
+    &amp;quot;lint:js&amp;quot;: &amp;quot;eslint --cache --ext .js,.jsx .&amp;quot;,
+    &amp;quot;lint:scss&amp;quot;: &amp;quot;stylelint \&amp;quot;src/**/*.scss\&amp;quot;&amp;quot;,
+    &amp;quot;lint&amp;quot;: &amp;quot;concurrently \&amp;quot;yarn run lint:js\&amp;quot; \&amp;quot;yarn run lint:scss\&amp;quot; \&amp;quot;yarn flow\&amp;quot;&amp;quot;,
+    &amp;quot;test&amp;quot;: &amp;quot;jest --config ./jest/jest-config.js&amp;quot;,
+    &amp;quot;test:coverage&amp;quot;: &amp;quot;jest --coverage --config ./jest/jest-config.js&amp;quot;,
+    &amp;quot;test:watch&amp;quot;: &amp;quot;jest --watch --config ./jest/jest-config.js&amp;quot;
+  },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;deploy를 실행하니 알아서 github에 commit되고 gitpage가 세팅된다.&lt;/p&gt;
+&lt;p&gt;몇 주 전에 세팅했던 터라 빼먹은게 있을거 같다. 다시 만들게 되면 좀 헤맬지도 모르겠다.&lt;/p&gt;
+&lt;p&gt;개별 프로젝트를 만들어서 정적사이트 제작시 gitpage에 대해 정리를 해봐야겠다.&lt;/p&gt;</content:encoded></item></channel></rss>
