@@ -1,4 +1,124 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 14 Apr 2020 08:46:46 GMT</lastBuildDate><item><title><![CDATA[라라벨 설치]]></title><description><![CDATA[라라벨 설치 간단히 정리해보기]]></description><link>https://world-one.github.io/posts/laravel-install</link><guid isPermaLink="false">https://world-one.github.io/posts/laravel-install</guid><pubDate>Mon, 13 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;라라벨laravel&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%9D%BC%EB%9D%BC%EB%B2%A8laravel&quot; aria-label=&quot;라라벨laravel permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;라라벨(Laravel)&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 23 Apr 2020 04:29:06 GMT</lastBuildDate><item><title><![CDATA[도커(docker) 써보기]]></title><description><![CDATA[도커 사용해보기]]></description><link>https://world-one.github.io/posts/docker-start</link><guid isPermaLink="false">https://world-one.github.io/posts/docker-start</guid><pubDate>Tue, 21 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;docker&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#docker&quot; aria-label=&quot;docker permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Docker&lt;/h3&gt;
+&lt;p&gt;aws에 docker를 설치해보자!&lt;/p&gt;
+&lt;h3 id=&quot;docker-install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#docker-install&quot; aria-label=&quot;docker install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;docker install&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.docker.com/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://docs.docker.com/&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;curl -s https://get.docker.com | sudo sh&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;도커에서 공식적으로 제공하는 스크립트라고 한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker -v
+Docker version 19.03.8, build afacb8b7f0&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;위와 같이 현재 최고 버전이 설치되었다.&lt;/p&gt;
+&lt;p&gt;설치된 패키지에서 docker라는 단어를 검색하면 아래와 같이 나온다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;dpkg --get-selections | grep docker
+
+docker-ce
+docker-ce-cli   &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;docker 추가 목록&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/etc/apt/sources.list.d/docker.list&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3 id=&quot;docker-start&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#docker-start&quot; aria-label=&quot;docker start permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;docker start&lt;/h3&gt;
+&lt;p&gt;실행중인 컨테이너 보기&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker ps
+
+CONTAINER ID    IMAGE      COMMAND      CREATED      STATUS        PORTS       NAMES&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;물론 아직 없다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker pull ubuntu
+
+Using default tag: latest
+latest: Pulling from library/ubuntu
+5bed26d33875: Pull complete 
+f11b29a9c730: Pull complete 
+930bda195c84: Pull complete 
+78bf9a5ad49e: Pull complete 
+Digest: sha256:bec5a2727be7fff3d308193cfde3491f8fba1a2ba392b7546b43a051853a341d
+Status: Downloaded newer image for ubuntu:latest
+docker.io/library/ubuntu:latest&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;우분투 이미지를 받아보았다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker iamges
+
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              latest              4e5021d210f6        4 weeks ago         64.2MB&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;도커 실행하기&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker run -it ubuntu:latest bash
+root@1a5e137ff1b9:/#
+root@1a5e137ff1b9:/# exit&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker ps
+CONTAINER ID    IMAGE      COMMAND      CREATED      STATUS        PORTS       NAMES
+
+docker ps -a
+CONTAINER ID  IMAGE          COMMAND   CREATED        STATUS                    PORTS   NAMES
+1a5e137ff1b9  ubuntu:latest  &amp;quot;bash&amp;quot;    2 minutes ago  Exited (0) 4 seconds ago          heuristic_shirley&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;동작하지 않는 컨테이는 위 명령어로 볼 수 있다.   &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker start [CONTAINER ID]
+docker restart [CONTAINER ID]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;여기서 다시 셸에 들어가려면 attach를 이용한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker attach [CONTAINER ID]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;삭제 명령어&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker rm [CONTAINER ID]
+docker rmi [image name]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;image 생성
+우선 php, nginx, git을 설치해보았다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;apt update
+apt install nginx
+apt install php
+apt install git&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;commit 명령어로 이미지를 생성할 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker commit cd5cc9c9249d ubuntu:nginx_php
+sha256:b6fb08e0011ffa27ef2d87b81274f38f3f87c3e5529912b6ef9276068b44db0f
+
+docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+ubuntu              nginx_php           b6fb08e0011f        4 seconds ago       269MB
+ubuntu              latest              4e5021d210f6        4 weeks ago         64.2MB&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;기존 이미지와는 별도로 새로운 이미지가 생성된다.&lt;/p&gt;
+&lt;p&gt;일단 한번 돌려보고 싶어서 만들어진 이미지를 다운받아 실행해보겠다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;docker pull nginx
+docker run -d -p 8181:80 nginx:latest&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;-d 옵션은 백그라운드로 실행, -p는 포트를 지정하는 옵션이다.&lt;br&gt;
+8181은 외부포트이고 80은 컨테이너 내부 포트이다.   &lt;/p&gt;
+&lt;p&gt;aws에서 포트를 열어준 뒤 확인하니 문제없이 접속되었다.&lt;/p&gt;
+&lt;h3 id=&quot;로컬-환경-설치&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A1%9C%EC%BB%AC-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%B9%98&quot; aria-label=&quot;로컬 환경 설치 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;로컬 환경 설치&lt;/h3&gt;
+&lt;p&gt;아마 로컬에서 만들고 dockerfile로 본서버에서 배포하는 듯??
+mac os에서 설치를 해보자. 관리를 위해 brew로 설치를 한다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;brew install docker
+docker ps
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;에러가 뜨길래 뭔가 했더니, docker desktop이란 app을 따로 설치해야한다.&lt;br&gt;
+cask로 설치를 해보았다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;brew cask install docker&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;설치후 docker app을 실행시킨 후 명령어를 입력하니 동작한다.&lt;/p&gt;
+&lt;h3 id=&quot;dockerfile&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#dockerfile&quot; aria-label=&quot;dockerfile permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Dockerfile&lt;/h3&gt;
+&lt;p&gt;dockerfile로 image를 만들 수 있다.&lt;br&gt;
+아마 이 file로 배포하는게 아닐까?? 싶은데…&lt;br&gt;
+그게 아니면 git처럼 docker hub에 올리는 방법도 있다.&lt;br&gt;
+비공개로 올리려면 비용이 든다…   &lt;/p&gt;
+&lt;p&gt;기본적인 명령어는 아래와 같다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;FROM &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;기반이 될 이미지&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ENV &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;환경변수&lt;/li&gt;
+&lt;li&gt;$[ ENV_ABC ]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;RUN : 기반이 될 이미지위에서 명령어 실행&lt;/li&gt;
+&lt;li&gt;COPY : 이미지에 추가될 파일들을 복사한다. &lt;/li&gt;
+&lt;li&gt;WORKDIR : run, cmd, entrypoint가 실행될 폴더&lt;/li&gt;
+&lt;li&gt;EXPOSE : port 설정&lt;/li&gt;
+&lt;li&gt;ENTRYPOINT : 컨테이너가 시작될때 실행되는 명령어, 한번만 들어간다.&lt;/li&gt;
+&lt;li&gt;CMD : ENTRYPOINT가 있다면 매개변수 넘겨주는 목적, 그 외에는 ENTRYPOINT와 비슷하게 사용&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;VOLUME : 컨테이너 밖 호스트에 저장, &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;VOLUME [“/path/a”, “/path/b”]&lt;/li&gt;
+&lt;li&gt;docker run -v 호스트 폴더:컨테이너 폴더&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[라라벨 설치]]></title><description><![CDATA[라라벨 설치 간단히 정리해보기]]></description><link>https://world-one.github.io/posts/laravel-install</link><guid isPermaLink="false">https://world-one.github.io/posts/laravel-install</guid><pubDate>Mon, 13 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;라라벨laravel&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%9D%BC%EB%9D%BC%EB%B2%A8laravel&quot; aria-label=&quot;라라벨laravel permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;라라벨(Laravel)&lt;/h3&gt;
 &lt;p&gt;오픈 소스 PHP 웹 프레임워크의 하나로, 테일러 오트웰이 개발하였으며 모델-뷰-컨트롤러(MVC) 아키텍처 패턴을 따라 웹 애플리케이션을 개발하기 위해 고안되었다.&lt;br&gt;
 라라벨은 심포니, 젠드 프레임워크, 코드이그나이터, Yii2 등과 함께 가장 대중적인 PHP 프레임워크 가운데 하나로 간주된다.&lt;/p&gt;
 &lt;p&gt;라라벨 이전에 사용하던 프레임워크는 코드이그나이터였다. 확실히 라라벨이 기능이 많은 만큼 무거운 느낌이 든다.   &lt;/p&gt;
