@@ -97,48 +97,51 @@ ES6 === ES2015 === ECMAScript2015<br>
 <li>Object.keys()</li>
 </ul>
 </li>
-<li>
-<p>use strict</p>
+<li>use strict</li>
+</ul>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">&#39;use strict&#39;;
 or
 function name(){
-&#39;use strict&#39;;
+  &#39;use strict&#39;;
 }</code></pre></div>
-</li>
-<li>
-<p>bind()</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">const module = {
-x: 42,
-getX: function() {
-return this.x;
-}
-};</code></pre></div>
-</li>
+<ul>
+<li>bind()</li>
 </ul>
-<p>const unboundGetX = module.getX;
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">const module = {
+  x: 42,
+  getX: function() {
+    return this.x;
+  }
+};
+
+const unboundGetX = module.getX;
 console.log(unboundGetX()); // The function gets invoked at the global scope
-// expected output: undefined</p>
-<p>const boundGetX = unboundGetX.bind(module);
+// expected output: undefined
+
+const boundGetX = unboundGetX.bind(module);
 console.log(boundGetX());
-// expected output: 42</p>
-<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">- JSON( Javascript Object Notation )
-  - JSON.stringify(obj);
-  - JSON.parse(json);
-
-- LexicalEnvironment
-  이건 좀 더 찾아보고 이해되면 정리해보자...
-
-#### ES2015
-
-- Class
-- Promise
-- const, let
-- arrow function : () =&gt; {}
-- rest parameter
-- spread 연산자
-- data: data == data 변수와 속성명이 같을 경우 하나만 써도 된다.
-- 동적 속성 생성 : object[ a+3 ], object[ &quot;na&quot;+b ]
-- 템플릿 문자열 : `${var}, wow` 백틱을 사용하여 문자열 만들기
-
-
-#### 계속...</code></pre></div></div></div></div><div class="Post-module--post__footer--3WzWU"><div><p class="Meta-module--meta__date--29eD7">Published <!-- -->6 Jun 2020</p></div><div class="Tags-module--tags--1L_ct"><ul class="Tags-module--tags__list--91FqN"><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/javascript/">Javascript</a></li></ul></div><div class="Author-module--author--2Yefr"><p>웹개발을 하며 해왔던 것, 궁금한 것들 정리하는 블로그</p></div></div><div class="Post-module--post__comments--25y6I"></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/ecma-script";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-cd6c7fa15f2cad5b5493.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-1d9b46fa5d1abe87c6c2.js"],"component---src-templates-not-found-template-js":["/component---src-templates-not-found-template-js-03a49449e1a83219ee25.js"],"component---src-templates-tags-list-template-js":["/component---src-templates-tags-list-template-js-baa35003cfaba412c873.js"],"component---src-templates-categories-list-template-js":["/component---src-templates-categories-list-template-js-c80da1deed6cdc790507.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-814e63885548285c5ec8.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js-6c16caf3796ede074647.js"],"component---src-templates-tag-template-js":["/component---src-templates-tag-template-js-3bd87cb3691af10384b2.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-6cafed3f19330b898a97.js"],"component---src-templates-index-template-js":["/component---src-templates-index-template-js-690b599fe96973995f6a.js"]};/*]]>*/</script><script src="/component---src-templates-post-template-js-6c16caf3796ede074647.js" async=""></script><script src="/commons-3247de6c5d61d32fc119.js" async=""></script><script src="/styles-202e1dd43dc66df3b3e9.js" async=""></script><script src="/app-cd6c7fa15f2cad5b5493.js" async=""></script><script src="/netlify-identity-widget-171ffe191486f421f700.js" async=""></script><script src="/webpack-runtime-31022d0051034590deee.js" async=""></script></body></html>
+// expected output: 42</code></pre></div>
+<ul>
+<li>
+<p>JSON( Javascript Object Notation )</p>
+<ul>
+<li>JSON.stringify(obj);</li>
+<li>JSON.parse(json);</li>
+</ul>
+</li>
+<li>LexicalEnvironment
+이건 좀 더 찾아보고 이해되면 정리해보자…</li>
+</ul>
+<h4 id="es2015" style="position:relative;"><a href="#es2015" aria-label="es2015 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ES2015</h4>
+<ul>
+<li>Class</li>
+<li>Promise</li>
+<li>const, let</li>
+<li>arrow function : () => {}</li>
+<li>rest parameter</li>
+<li>spread 연산자</li>
+<li>data: data == data 변수와 속성명이 같을 경우 하나만 써도 된다.</li>
+<li>동적 속성 생성 : object[ a+3 ], object[ “na”+b ]</li>
+<li>템플릿 문자열 : <code class="language-text">${var}, wow</code> 백틱을 사용하여 문자열 만들기</li>
+</ul>
+<h4 id="계속" style="position:relative;"><a href="#%EA%B3%84%EC%86%8D" aria-label="계속 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>계속…</h4></div></div></div><div class="Post-module--post__footer--3WzWU"><div><p class="Meta-module--meta__date--29eD7">Published <!-- -->6 Jun 2020</p></div><div class="Tags-module--tags--1L_ct"><ul class="Tags-module--tags__list--91FqN"><li class="Tags-module--tags__list-item--1M30P"><a class="Tags-module--tags__list-item-link--3SL_8" href="/tag/javascript/">Javascript</a></li></ul></div><div class="Author-module--author--2Yefr"><p>웹개발을 하며 해왔던 것, 궁금한 것들 정리하는 블로그</p></div></div><div class="Post-module--post__comments--25y6I"></div></div></div></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/posts/ecma-script";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-cd6c7fa15f2cad5b5493.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-1d9b46fa5d1abe87c6c2.js"],"component---src-templates-not-found-template-js":["/component---src-templates-not-found-template-js-03a49449e1a83219ee25.js"],"component---src-templates-tags-list-template-js":["/component---src-templates-tags-list-template-js-baa35003cfaba412c873.js"],"component---src-templates-categories-list-template-js":["/component---src-templates-categories-list-template-js-c80da1deed6cdc790507.js"],"component---src-templates-page-template-js":["/component---src-templates-page-template-js-814e63885548285c5ec8.js"],"component---src-templates-post-template-js":["/component---src-templates-post-template-js-6c16caf3796ede074647.js"],"component---src-templates-tag-template-js":["/component---src-templates-tag-template-js-3bd87cb3691af10384b2.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-6cafed3f19330b898a97.js"],"component---src-templates-index-template-js":["/component---src-templates-index-template-js-690b599fe96973995f6a.js"]};/*]]>*/</script><script src="/component---src-templates-post-template-js-6c16caf3796ede074647.js" async=""></script><script src="/commons-3247de6c5d61d32fc119.js" async=""></script><script src="/styles-202e1dd43dc66df3b3e9.js" async=""></script><script src="/app-cd6c7fa15f2cad5b5493.js" async=""></script><script src="/netlify-identity-widget-171ffe191486f421f700.js" async=""></script><script src="/webpack-runtime-31022d0051034590deee.js" async=""></script></body></html>
