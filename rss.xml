@@ -1,4 +1,179 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 28 Jun 2020 05:22:46 GMT</lastBuildDate><item><title><![CDATA[Data Structures and Algorithms]]></title><description><![CDATA[자료구조와 알고리즘]]></description><link>https://world-one.github.io/posts/Data-Structures-and-Algorithms</link><guid isPermaLink="false">https://world-one.github.io/posts/Data-Structures-and-Algorithms</guid><pubDate>Fri, 26 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;누구나-자료-구조와-알고리즘&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%88%84%EA%B5%AC%EB%82%98-%EC%9E%90%EB%A3%8C-%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98&quot; aria-label=&quot;누구나 자료 구조와 알고리즘 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;누구나 자료 구조와 알고리즘&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 03 Jul 2020 10:06:06 GMT</lastBuildDate><item><title><![CDATA[Virtual DOM]]></title><description><![CDATA[버추얼 돔이란 무엇인가??]]></description><link>https://world-one.github.io/posts/virtual-dom</link><guid isPermaLink="false">https://world-one.github.io/posts/virtual-dom</guid><pubDate>Fri, 03 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;virtual-dom&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#virtual-dom&quot; aria-label=&quot;virtual dom permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Virtual DOM&lt;/h3&gt;
+&lt;p&gt;Virtual DOM이란 뭔가?? 왜 사용하는가??   &lt;/p&gt;
+&lt;h4 id=&quot;브라우저-렌더링&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EB%A0%8C%EB%8D%94%EB%A7%81&quot; aria-label=&quot;브라우저 렌더링 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;브라우저 렌더링&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://world-one.github.io/posts/browser-rendering,&quot; title=&quot;브라우저 렌더링 간단 정리&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Browser Rendering&lt;/a&gt;   &lt;/p&gt;
+&lt;p&gt;HTML으로부터 DOM Tree를 생성하고, CSS를 파싱하여 스타일 룰을 Attachment하여 Reder Tree를 생성한다.&lt;br&gt;
+reflow가 일어난다.( 각 노드의 위치 )&lt;br&gt;
+painting, 즉 각 노드에 색을 입힌다.&lt;/p&gt;
+&lt;h4 id=&quot;그럼-virtual-dom을-왜-쓰는가&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EA%B7%B8%EB%9F%BC-virtual-dom%EC%9D%84-%EC%99%9C-%EC%93%B0%EB%8A%94%EA%B0%80&quot; aria-label=&quot;그럼 virtual dom을 왜 쓰는가 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;그럼 Virtual DOM을 왜 쓰는가?&lt;/h4&gt;
+&lt;p&gt;일반적으로 Vue, React와 같은 SPA는 DOM조작이 많이 일어난다.&lt;br&gt;
+reflow가 많이 일어나면 성능이 떨어진다. 비효율적이다.&lt;br&gt;
+Virtual DOM은 렌더링은 일어나지 않으며,&lt;br&gt;
+미리 가상의 DOM에 변화를 적용한 뒤 실제 DOM과 비교하여 변화된 부분만 적용한다.&lt;br&gt;
+브라우저가 하는 일을 줄여 성능을 개선시킨다고 한다.   &lt;/p&gt;
+&lt;p&gt;그러니까 실제로 브라우저에 그려지는 부분을 제외하고&lt;br&gt;
+메모리에서 연산이 일어나고 최종적으로 변화한 부분만&lt;br&gt;
+화면에 그려준다는 말로 이해하면 되는 듯 싶다.&lt;/p&gt;
+&lt;p&gt;여러번 변경되어야 할 것을 한번에 모아서 처리해준다.&lt;br&gt;
+이건 브라우저가 불필요하게 렌더링하는 것을 막아준다.&lt;/p&gt;
+&lt;h4 id=&quot;virtual-dom-구현&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#virtual-dom-%EA%B5%AC%ED%98%84&quot; aria-label=&quot;virtual dom 구현 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Virtual DOM 구현?&lt;/h4&gt;
+&lt;p&gt;DOM 요소를 객체로 표현하면&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{ type: &amp;#39;ul&amp;#39;, props: { &amp;#39;class&amp;#39;: &amp;#39;list&amp;#39; }, children: [
+  { type: &amp;#39;li&amp;#39;, props: {}, children: [&amp;#39;item 1&amp;#39;] },
+  { type: &amp;#39;li&amp;#39;, props: {}, children: [&amp;#39;item 2&amp;#39;] }
+] }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;저기서 이제 각 노드들을 비교하여 바뀐 값만 업데이트 해준다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function createElement(node: any) {
+  if (typeof node === &amp;#39;string&amp;#39;) {
+    return document.createTextNode(node);
+  }
+  const $el = document.createElement(node.type);
+  
+  node.children
+    .map(createElement)
+    .forEach($el.appendChild.bind($el));
+  return $el;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;실제 돔 노드를 반환&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function updateElement($parent: any, newNode: any, oldNode: any, index = 0) {
+  if (!oldNode) {
+    $parent.appendChild(
+      createElement(newNode)
+    );
+  } else if (!newNode) {
+    $parent.removeChild(
+      $parent.childNodes[index]
+    );
+  } else if (changed(newNode, oldNode)) { 
+    $parent.replaceChild(
+      createElement(newNode),
+      $parent.childNodes[index]
+    );
+  } else if (newNode.type) {
+    const newLength = newNode.children.length;
+    const oldLength = oldNode.children.length;
+    for (let i = 0; i &amp;lt; newLength || i &amp;lt; oldLength; i++) {
+      updateElement(
+        $parent.childNodes[index],
+        newNode.children[i],
+        oldNode.children[i],
+        i
+      );
+    }
+  }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;변경된 값을 찾아 업데이트&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function changed(node1: any, node2: any) {
+  return typeof node1 !== typeof node2 ||
+         typeof node1 === &amp;#39;string&amp;#39; &amp;amp;&amp;amp; node1 !== node2 ||
+         node1.type !== node2.type
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;값이 변했는 확인   &lt;/p&gt;
+&lt;p&gt;일단 참고 사이트의 예제를 그대로 써서 동작하는걸 확인했다.&lt;br&gt;
+가상 돔이라는게 특별한게 아니라, 실제 돔 형태를 내가 만들어서 직접 비교할 수 있게 하는 방식?? 이라는 생각이 든다.&lt;br&gt;
+기본 개념을 이해하는 건 이 정도면 충분할 것 같다.&lt;/p&gt;
+&lt;h4 id=&quot;참고사이트&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0%EC%82%AC%EC%9D%B4%ED%8A%B8&quot; aria-label=&quot;참고사이트 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참고사이트&lt;/h4&gt;
+&lt;p&gt;&lt;a href=&quot;https://medium.com/@enro2414_40667/virtual-dom-%EB%B2%84%EC%B6%94%EC%96%BC-%EB%8F%94-%EA%B0%80%EC%83%81-%EB%8F%94-%EC%9D%84-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-1c44606ea9b1&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://medium.com/@enro2414_40667/virtual-dom-%EB%B2%84%EC%B6%94%EC%96%BC-%EB%8F%94-%EA%B0%80%EC%83%81-%EB%8F%94-%EC%9D%84-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-1c44606ea9b1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.holaxprogramming.com/2018/04/15/react-optimizing-virtual-dom-explained/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.holaxprogramming.com/2018/04/15/react-optimizing-virtual-dom-explained/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Typescript, webpack, babel setting without framework]]></title><description><![CDATA[프레임워크 없이 typescript, webpack, babel 등 세팅하기]]></description><link>https://world-one.github.io/posts/set-typescript-webpack-babel</link><guid isPermaLink="false">https://world-one.github.io/posts/set-typescript-webpack-babel</guid><pubDate>Wed, 01 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;javascript-환경-설정하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#javascript-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0&quot; aria-label=&quot;javascript 환경 설정하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;javascript 환경 설정하기&lt;/h3&gt;
+&lt;p&gt;typescript, webpack, babel 등등&lt;/p&gt;
+&lt;h4 id=&quot;directory-structure&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#directory-structure&quot; aria-label=&quot;directory structure permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;directory structure&lt;/h4&gt;
+&lt;h4 id=&quot;tsc&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tsc&quot; aria-label=&quot;tsc permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;tsc&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;tsc --init&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;webpack-install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#webpack-install&quot; aria-label=&quot;webpack install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;webpack install&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn add -D webpack webpack-dev-server webpack-cli
+yarn add -D html-webpack-plugin clean-webpack-plugin&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;plugins: [
+  new CleanWebpackPlugin(),
+  new HtmlWebpackPlugin({
+    template: `./public/index.html`
+  })
+]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;플러그인을 통헤 템플릿을 지정하면 알아서 번들링된 js파일을 추가해준다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;scripts&amp;quot;: {
+    &amp;quot;build&amp;quot;: &amp;quot;webpack&amp;quot;,
+    &amp;quot;watch&amp;quot;: &amp;quot;webpack-dev-server --inline --hot&amp;quot;
+  },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;package.json에 빌드와 로컬 서버를 위한 스크립트를 추가해주었다.&lt;/p&gt;
+&lt;h4 id=&quot;babel-install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#babel-install&quot; aria-label=&quot;babel install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;babel install&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn add -D @babel/core @babel/preset-env @babel/preset-typescript babel-loader&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;babel에서 ts의 문법을 변환해줄 수 있다.&lt;br&gt;
+간단히 webpack.confg.js 에 모듈을 추가해주었다.&lt;/p&gt;
+&lt;h4 id=&quot;webpackconfigjs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#webpackconfigjs&quot; aria-label=&quot;webpackconfigjs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;webpack.config.js&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const path = require(&amp;quot;path&amp;quot;);
+const HtmlWebpackPlugin = require(&amp;quot;html-webpack-plugin&amp;quot;);
+const { CleanWebpackPlugin } = require(&amp;#39;clean-webpack-plugin&amp;#39;);
+module.exports = {
+  mode: &amp;quot;development&amp;quot;,
+  entry: {
+    app: &amp;quot;./src/index&amp;quot;,
+  },
+  resolve: {
+    extensions: [&amp;quot;.ts&amp;quot;, &amp;quot;.js&amp;quot;, &amp;quot;.jsx&amp;quot;]
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|ts)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: &amp;#39;babel-loader&amp;#39;,
+          options: {
+            presets: [
+              &amp;#39;@babel/preset-env&amp;#39;,
+              &amp;#39;@babel/preset-typescript&amp;#39;
+            ],
+            // plugins: [
+            //   &amp;#39;@babel/proposal-class-properties&amp;#39;,
+            //   &amp;#39;@babel/proposal-object-rest-spread&amp;#39;
+            // ]
+          }
+        }
+      }
+    ]
+  },
+  output: {
+    path: path.resolve(__dirname, &amp;quot;dist&amp;quot;),
+    filename: &amp;quot;[name].[hash].js&amp;quot;
+  },
+  devServer: {
+    historyApiFallback: true,
+    open: false,
+    port: 8080,
+    host: &amp;#39;localhost&amp;#39;,
+    hot: true,
+    inline: true
+  },
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: `./public/index.html`
+    })
+  ]
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;scss&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#scss&quot; aria-label=&quot;scss permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;scss&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn add -D css-loader node-sass sass-loader style-loader&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
+  test: /\.s[ac]ss$/i,
+  use: [
+    &amp;#39;style-loader&amp;#39;,
+    &amp;#39;css-loader&amp;#39;,
+    &amp;#39;sass-loader&amp;#39;,
+  ]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;로더 순서에 따라 에러가 발생한다. 위 순서로 하니 에러가 없다.&lt;br&gt;
+이렇게만 설치해서 사용하면 스타일이 헤더에 추가된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn add -D mini-css-extract-plugin&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;별도의 css파일로 추가되도록 처리해주는 플러그인&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: &amp;#39;./public/index.html&amp;#39;
+    }),
+    new MiniCssExtractPlugin({
+      filename: &amp;quot;[name].css&amp;quot;,
+      chunkFilename: &amp;quot;[id].css&amp;quot;
+     })
+  ]&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Data Structures and Algorithms]]></title><description><![CDATA[자료구조와 알고리즘]]></description><link>https://world-one.github.io/posts/Data-Structures-and-Algorithms</link><guid isPermaLink="false">https://world-one.github.io/posts/Data-Structures-and-Algorithms</guid><pubDate>Fri, 26 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;누구나-자료-구조와-알고리즘&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%88%84%EA%B5%AC%EB%82%98-%EC%9E%90%EB%A3%8C-%EA%B5%AC%EC%A1%B0%EC%99%80-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98&quot; aria-label=&quot;누구나 자료 구조와 알고리즘 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;누구나 자료 구조와 알고리즘&lt;/h3&gt;
 &lt;p&gt;두꺼운 책보다는 가볍게 읽을 만한 책을 찾던 중 서점에서 발견한 책이다.&lt;/p&gt;
 &lt;h4 id=&quot;저자--옮긴이&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%80%EC%9E%90--%EC%98%AE%EA%B8%B4%EC%9D%B4&quot; aria-label=&quot;저자  옮긴이 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;저자 / 옮긴이&lt;/h4&gt;
 &lt;ul&gt;
@@ -1838,36 +2013,7 @@ net.ipv6.conf.lo.disable_ipv6 = 1&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sysctl -p
 cat /proc/sys/net/ipv6/conf/all/disable_ipv6&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;해당 내용은 아래 포스팅을 보며 따라한 것을 필요한 것만 정리해둔 것입니다.&lt;br&gt;
-&lt;a href=&quot;https://blog.lael.be/post/8319&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://blog.lael.be/post/8319&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby.js]]></title><description><![CDATA[정적사이트 생성기 Gatsby]]></description><link>https://world-one.github.io/posts/Gatsby.js</link><guid isPermaLink="false">https://world-one.github.io/posts/Gatsby.js</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;github page를 이용한 정적 사이트로 기술용 블로그를 만들자라는 결심을 하고 설치를 했지만 방치한지 몇 주가 지났다.&lt;/p&gt;
-&lt;p&gt;처음 막연하게 검색을 해보니 Jekyll, Gatsby가 눈에 띄었다.&lt;/p&gt;
-&lt;p&gt;둘 다 마크다운 언어로 포스팅을 할 수 있었으면 테마도 쉽게 적용할 수 있었다.&lt;/p&gt;
-&lt;p&gt;react에 대한 관심이 있었던 터라 Gatsby로 웹사이트를 구성해보았다.&lt;/p&gt;
-&lt;p&gt;우선은 별도의 수정 없이 있는 그대로 테마만 적용하여 사용해보려한다.&lt;/p&gt;
-&lt;h3 id=&quot;install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install&quot; aria-label=&quot;install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;install&lt;/h3&gt;
-&lt;p&gt;gatsby-starter-lumen 테마가 단순하니 보기 좋아 무작정 설치를 했다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npx gatsby new gatsby-starter-lumen https://github.com/alxshelepenok/gatsby-starter-lumen
-cd gatsby-starter-lumen
-gatsby develop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;설치가 완료되면 로컬환경에서 돌려볼 수 있다.&lt;br&gt;
-gatsby를 따로 설치 하진 않았기에 yarn으로 실행했다.    &lt;/p&gt;
-&lt;p&gt;package.json에서 보면 여러 실행 명령어가 있다.&lt;br&gt;
-이 중 develop, deploy 정도만 사용할 듯 싶다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;scripts&amp;quot;: {
-    &amp;quot;develop&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby develop&amp;quot;,
-    &amp;quot;build&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build&amp;quot;,
-    &amp;quot;deploy&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public -b master&amp;quot;,
-    &amp;quot;clean&amp;quot;: &amp;quot;rimraf .cache public&amp;quot;,
-    &amp;quot;flow&amp;quot;: &amp;quot;flow&amp;quot;,
-    &amp;quot;lint:js&amp;quot;: &amp;quot;eslint --cache --ext .js,.jsx .&amp;quot;,
-    &amp;quot;lint:scss&amp;quot;: &amp;quot;stylelint \&amp;quot;src/**/*.scss\&amp;quot;&amp;quot;,
-    &amp;quot;lint&amp;quot;: &amp;quot;concurrently \&amp;quot;yarn run lint:js\&amp;quot; \&amp;quot;yarn run lint:scss\&amp;quot; \&amp;quot;yarn flow\&amp;quot;&amp;quot;,
-    &amp;quot;test&amp;quot;: &amp;quot;jest --config ./jest/jest-config.js&amp;quot;,
-    &amp;quot;test:coverage&amp;quot;: &amp;quot;jest --coverage --config ./jest/jest-config.js&amp;quot;,
-    &amp;quot;test:watch&amp;quot;: &amp;quot;jest --watch --config ./jest/jest-config.js&amp;quot;
-  },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;deploy를 실행하니 알아서 github에 commit되고 gitpage가 세팅된다.&lt;/p&gt;
-&lt;p&gt;몇 주 전에 세팅했던 터라 빼먹은게 있을거 같다. 다시 만들게 되면 좀 헤맬지도 모르겠다.&lt;/p&gt;
-&lt;p&gt;개별 프로젝트를 만들어서 정적사이트 제작시 gitpage에 대해 정리를 해봐야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Markdown]]></title><description><![CDATA[마크다운 언어에 대해 정리해보자!]]></description><link>https://world-one.github.io/posts/Markdown</link><guid isPermaLink="false">https://world-one.github.io/posts/Markdown</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;a href=&quot;https://blog.lael.be/post/8319&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://blog.lael.be/post/8319&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Markdown]]></title><description><![CDATA[마크다운 언어에 대해 정리해보자!]]></description><link>https://world-one.github.io/posts/Markdown</link><guid isPermaLink="false">https://world-one.github.io/posts/Markdown</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#header&quot;&gt;header&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#list&quot;&gt;list&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#blockquote&quot;&gt;blockquote&lt;/a&gt;&lt;/li&gt;
@@ -1967,4 +2113,33 @@ __strong__
 &lt;em&gt;em&lt;/em&gt;&lt;br&gt;
 &lt;strong&gt;strong&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;strong&lt;/strong&gt;&lt;br&gt;
-&lt;del&gt;del&lt;/del&gt;   &lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;del&gt;del&lt;/del&gt;   &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby.js]]></title><description><![CDATA[정적사이트 생성기 Gatsby]]></description><link>https://world-one.github.io/posts/Gatsby.js</link><guid isPermaLink="false">https://world-one.github.io/posts/Gatsby.js</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;github page를 이용한 정적 사이트로 기술용 블로그를 만들자라는 결심을 하고 설치를 했지만 방치한지 몇 주가 지났다.&lt;/p&gt;
+&lt;p&gt;처음 막연하게 검색을 해보니 Jekyll, Gatsby가 눈에 띄었다.&lt;/p&gt;
+&lt;p&gt;둘 다 마크다운 언어로 포스팅을 할 수 있었으면 테마도 쉽게 적용할 수 있었다.&lt;/p&gt;
+&lt;p&gt;react에 대한 관심이 있었던 터라 Gatsby로 웹사이트를 구성해보았다.&lt;/p&gt;
+&lt;p&gt;우선은 별도의 수정 없이 있는 그대로 테마만 적용하여 사용해보려한다.&lt;/p&gt;
+&lt;h3 id=&quot;install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install&quot; aria-label=&quot;install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;install&lt;/h3&gt;
+&lt;p&gt;gatsby-starter-lumen 테마가 단순하니 보기 좋아 무작정 설치를 했다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npx gatsby new gatsby-starter-lumen https://github.com/alxshelepenok/gatsby-starter-lumen
+cd gatsby-starter-lumen
+gatsby develop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;설치가 완료되면 로컬환경에서 돌려볼 수 있다.&lt;br&gt;
+gatsby를 따로 설치 하진 않았기에 yarn으로 실행했다.    &lt;/p&gt;
+&lt;p&gt;package.json에서 보면 여러 실행 명령어가 있다.&lt;br&gt;
+이 중 develop, deploy 정도만 사용할 듯 싶다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;scripts&amp;quot;: {
+    &amp;quot;develop&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby develop&amp;quot;,
+    &amp;quot;build&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build&amp;quot;,
+    &amp;quot;deploy&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public -b master&amp;quot;,
+    &amp;quot;clean&amp;quot;: &amp;quot;rimraf .cache public&amp;quot;,
+    &amp;quot;flow&amp;quot;: &amp;quot;flow&amp;quot;,
+    &amp;quot;lint:js&amp;quot;: &amp;quot;eslint --cache --ext .js,.jsx .&amp;quot;,
+    &amp;quot;lint:scss&amp;quot;: &amp;quot;stylelint \&amp;quot;src/**/*.scss\&amp;quot;&amp;quot;,
+    &amp;quot;lint&amp;quot;: &amp;quot;concurrently \&amp;quot;yarn run lint:js\&amp;quot; \&amp;quot;yarn run lint:scss\&amp;quot; \&amp;quot;yarn flow\&amp;quot;&amp;quot;,
+    &amp;quot;test&amp;quot;: &amp;quot;jest --config ./jest/jest-config.js&amp;quot;,
+    &amp;quot;test:coverage&amp;quot;: &amp;quot;jest --coverage --config ./jest/jest-config.js&amp;quot;,
+    &amp;quot;test:watch&amp;quot;: &amp;quot;jest --watch --config ./jest/jest-config.js&amp;quot;
+  },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;deploy를 실행하니 알아서 github에 commit되고 gitpage가 세팅된다.&lt;/p&gt;
+&lt;p&gt;몇 주 전에 세팅했던 터라 빼먹은게 있을거 같다. 다시 만들게 되면 좀 헤맬지도 모르겠다.&lt;/p&gt;
+&lt;p&gt;개별 프로젝트를 만들어서 정적사이트 제작시 gitpage에 대해 정리를 해봐야겠다.&lt;/p&gt;</content:encoded></item></channel></rss>
