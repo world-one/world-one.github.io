@@ -166,7 +166,7 @@ const prevAge = prevAgeRef.current;</code></pre></div>
 <p>이전 값을 기억해서 성능을 최적화하는 용도   </p>
 <ul>
 <li>
-<p>useMemo
+<p>useMemo<br>
 계산량이 많은 함수의 반환값을 재활용</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">import { runExpensiveJob } from &#39;./util&#39;;
 function  MyComponent({ v1, v2 }) {
@@ -176,7 +176,7 @@ return &lt;p&gt;{`value is ${value}`&lt;/p&gt;
 <p>의존성 배열이 변경되지 않으면 기존에 계산된 값을 재사용한다.</p>
 </li>
 <li>
-<p>useCallback
+<p>useCallback<br>
 리액트의 렌더링 성능을 위해 제공되는 훅<br>
 속성값이 변할 경우 React.memo를 사용해도 불필요한 렌더링이 발생한다.   </p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">import { saveToServer } from &#39;./api&#39;;
@@ -249,12 +249,12 @@ getNameLength: () => name.length,
 <p>export default forwardRef(Profile);</p>
 <div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">#### useLayoutEffec, useDebugValue
 
-- useLayoutEffec
+- useLayoutEffec   
 useEffec와 비슷하지만 동기로 호출한다.   
 성능상 useEffect를 사용,   
 렌더링 직후 돔 요소의 값을 읽는 경우에는 useLayoutEffect 훅을 사용하는 것이 적합
 
-- useDebugValue
+- useDebugValue   
 개발 편의를 위해 제공   
 커스텀 훅의 내부 상태를 관찰할 수 있다.   </code></pre></div>
 <p>function useToggle(initialValue) {
