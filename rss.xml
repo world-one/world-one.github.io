@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 26 Jul 2020 06:21:28 GMT</lastBuildDate><item><title><![CDATA[React Hook]]></title><description><![CDATA[리액트 훅 정리]]></description><link>https://world-one.github.io/posts/react-hook</link><guid isPermaLink="false">https://world-one.github.io/posts/react-hook</guid><pubDate>Sat, 25 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;리액트-훅react-hook&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%9B%85react-hook&quot; aria-label=&quot;리액트 훅react hook permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;리액트 훅(React Hook)&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 26 Jul 2020 06:23:32 GMT</lastBuildDate><item><title><![CDATA[React Hook]]></title><description><![CDATA[리액트 훅 정리]]></description><link>https://world-one.github.io/posts/react-hook</link><guid isPermaLink="false">https://world-one.github.io/posts/react-hook</guid><pubDate>Sat, 25 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;리액트-훅react-hook&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%9B%85react-hook&quot; aria-label=&quot;리액트 훅react hook permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;리액트 훅(React Hook)&lt;/h3&gt;
 &lt;p&gt;훅은 함수형 컴포넌트에 기능을 추가할 때 사용하는 함수다.
 함수형 컴포넌트에서 상태값을 사용 할 수 있다.
 훅이 나오면서 클래스보다는 함수형 컴포넌트로 작성하는 걸 추천한다.&lt;/p&gt;
@@ -115,95 +115,98 @@ return &amp;lt;p&amp;gt;{`value is ${value}`&amp;lt;/p&amp;gt;
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;의존성 배열이 변경되지 않으면 기존에 계산된 값을 재사용한다.&lt;/p&gt;
 &lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;useCallback&lt;br&gt;
-리액트의 렌더링 성능을 위해 제공되는 훅&lt;br&gt;
+&lt;li&gt;useCallback   &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;리액트의 렌더링 성능을 위해 제공되는 훅&lt;br&gt;
 속성값이 변할 경우 React.memo를 사용해도 불필요한 렌더링이 발생한다.   &lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import { saveToServer } from &amp;#39;./api&amp;#39;;
-import UserEdit from &amp;#39;./UserEdit&amp;#39;;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;function Profile() {
-const [name, setName] = useState(”);
-const [age, setAge] = useState(0);
-return(
-&lt;div&gt;
-&lt;p&gt;{&lt;code class=&quot;language-text&quot;&gt;name is ${name}&lt;/code&gt;}&lt;/p&gt;
-&amp;#x3C;UserEdit
-onSave={() =&gt; saveToServer(name, age)}
-setName={setName}
-setAge={setAge}
-/&gt;
-&lt;/div&gt;
-);
-}&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;렌더링될 때마다 onSave에 새로운 함수가 입력된다.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;const onSave = useCallback(() =&gt; saveToServer(name, age), [name, age]);&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;의존성 배열이 변경되지 않으면 이전에 생성한 함수가 재사용된다.
+import UserEdit from &amp;#39;./UserEdit&amp;#39;;
 
-#### useReducer
-리덕스의 리듀서처럼 관리할 수 있다.   &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;import React, { useReducer } from ‘react’;&lt;/p&gt;
-&lt;p&gt;const INITIAL_STATE = { name: ‘empty’, age: 0 };&lt;/p&gt;
-&lt;p&gt;function reducer(state, action) {
-switch (action.type) {
-case ‘setName’: return { …state, name: action.name };
-case ‘setAge’: return { …state, age: action.age };
-default: retrun state;
+function Profile() {
+  const [name, setName] = useState(&amp;#39;&amp;#39;);
+  const [age, setAge] = useState(0);
+  return(
+    &amp;lt;div&amp;gt;
+      &amp;lt;p&amp;gt;{`name is ${name}`}&amp;lt;/p&amp;gt;
+      &amp;lt;UserEdit 
+        onSave={() =&amp;gt; saveToServer(name, age)}
+        setName={setName}
+        setAge={setAge}
+      /&amp;gt;
+    &amp;lt;/div&amp;gt;
+  );
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;렌더링될 때마다 onSave에 새로운 함수가 입력된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const onSave = useCallback(() =&amp;gt; saveToServer(name, age), [name, age]);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;의존성 배열이 변경되지 않으면 이전에 생성한 함수가 재사용된다.&lt;/p&gt;
+&lt;h4 id=&quot;usereducer&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#usereducer&quot; aria-label=&quot;usereducer permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;useReducer&lt;/h4&gt;
+&lt;p&gt;리덕스의 리듀서처럼 관리할 수 있다.   &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import React, { useReducer } from &amp;#39;react&amp;#39;;
+
+const INITIAL_STATE = { name: &amp;#39;empty&amp;#39;, age: 0 };
+
+function reducer(state, action) {
+  switch (action.type) {
+    case &amp;#39;setName&amp;#39;: return { ...state, name: action.name };
+    case &amp;#39;setAge&amp;#39;: return { ...state, age: action.age };
+    default: retrun state;
+  }
 }
-}&lt;/p&gt;
-&lt;p&gt;function Profile() {
-const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
-return (
-&lt;div&gt;
-&lt;p&gt;{&lt;code class=&quot;language-text&quot;&gt;name is ${name}&lt;/code&gt;}&lt;/p&gt;
-&amp;#x3C;input
-type=“text”
-value={state.name}
-onChange={e =&gt; dispatch({ type: ‘setName’, name: e.currentTarget.value })}
-/&gt;
-&lt;/div&gt;
-);
-}&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;리덕스의 리듀스 방식으로 작성된 함수
 
-컨텍스트 API와 함께 이벤트 처리 함수 전달&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;export const ProfileDispatch = REact.createContext(null);&lt;/p&gt;
-&lt;p&gt;function Profile() {
-const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
-return (
-&lt;p&gt;{&lt;code class=&quot;language-text&quot;&gt;name is ${name}&lt;/code&gt;}&lt;/p&gt;
-&amp;#x3C;ProfileDispatch.Provider value={dispatch}&gt;
-&lt;SomeComponent /&gt;
-&lt;/ProfileDispatch&gt;
-);
-}&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;useReducer 훅의 dispatch 함수는 값이 변하지 않는 특징이 있어 불필요하게 렌더링 되는 일은 발생하지 않는다.   
+function Profile() {
+  const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
+  return (
+    &amp;lt;div&amp;gt;
+      &amp;lt;p&amp;gt;{`name is ${name}`}&amp;lt;/p&amp;gt;
+      &amp;lt;input 
+        type=&amp;quot;text&amp;quot;
+        value={state.name}
+        onChange={e =&amp;gt; dispatch({ type: &amp;#39;setName&amp;#39;, name: e.currentTarget.value })}
+      /&amp;gt;
+    &amp;lt;/div&amp;gt;
+  );
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;리덕스의 리듀스 방식으로 작성된 함수&lt;/p&gt;
+&lt;p&gt;컨텍스트 API와 함께 이벤트 처리 함수 전달&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;export const ProfileDispatch = REact.createContext(null);
 
-#### useImperativeHandle
-부모 컴퍼넌트에서 접근 가능&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;useImperativeHandle(ref, () =&gt;({
-addAge: value =&gt; setAge(age + value),
-getNameLength: () =&gt; name.length,
-}))&lt;/p&gt;
-&lt;p&gt;export default forwardRef(Profile);&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;#### useLayoutEffec, useDebugValue
 
-- useLayoutEffec   
-useEffec와 비슷하지만 동기로 호출한다.   
-성능상 useEffect를 사용,   
-렌더링 직후 돔 요소의 값을 읽는 경우에는 useLayoutEffect 훅을 사용하는 것이 적합
+function Profile() {
+  const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
+  return (
+    &amp;lt;p&amp;gt;{`name is ${name}`}&amp;lt;/p&amp;gt;
+    &amp;lt;ProfileDispatch.Provider value={dispatch}&amp;gt;
+      &amp;lt;SomeComponent /&amp;gt;
+    &amp;lt;/ProfileDispatch&amp;gt;
+  );
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;useReducer 훅의 dispatch 함수는 값이 변하지 않는 특징이 있어 불필요하게 렌더링 되는 일은 발생하지 않는다.   &lt;/p&gt;
+&lt;h4 id=&quot;useimperativehandle&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#useimperativehandle&quot; aria-label=&quot;useimperativehandle permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;useImperativeHandle&lt;/h4&gt;
+&lt;p&gt;부모 컴퍼넌트에서 접근 가능&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;useImperativeHandle(ref, () =&amp;gt;({
+  addAge: value =&amp;gt; setAge(age + value),
+  getNameLength: () =&amp;gt; name.length,
+}))
 
-- useDebugValue   
-개발 편의를 위해 제공   
-커스텀 훅의 내부 상태를 관찰할 수 있다.   &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;function useToggle(initialValue) {
+export default forwardRef(Profile);&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;uselayouteffec-usedebugvalue&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#uselayouteffec-usedebugvalue&quot; aria-label=&quot;uselayouteffec usedebugvalue permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;useLayoutEffec, useDebugValue&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;useLayoutEffec&lt;br&gt;
+useEffec와 비슷하지만 동기로 호출한다.&lt;br&gt;
+성능상 useEffect를 사용,&lt;br&gt;
+렌더링 직후 돔 요소의 값을 읽는 경우에는 useLayoutEffect 훅을 사용하는 것이 적합&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;useDebugValue&lt;br&gt;
+개발 편의를 위해 제공&lt;br&gt;
+커스텀 훅의 내부 상태를 관찰할 수 있다.   &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;function useToggle(initialValue) {
 const [value, setValue] = useState(initialValue);
-const onToggle = () =&gt; setValue(!value);
-useDebugValue(value ? ‘on’ : ‘off’);
+const onToggle = () =&amp;gt; setValue(!value);
+useDebugValue(value ? &amp;#39;on&amp;#39; : &amp;#39;off&amp;#39;);
 return [value, onToggle];
-}&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[Virtual DOM]]></title><description><![CDATA[버추얼 돔이란 무엇인가??]]></description><link>https://world-one.github.io/posts/virtual-dom</link><guid isPermaLink="false">https://world-one.github.io/posts/virtual-dom</guid><pubDate>Fri, 03 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;virtual-dom&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#virtual-dom&quot; aria-label=&quot;virtual dom permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Virtual DOM&lt;/h3&gt;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Virtual DOM]]></title><description><![CDATA[버추얼 돔이란 무엇인가??]]></description><link>https://world-one.github.io/posts/virtual-dom</link><guid isPermaLink="false">https://world-one.github.io/posts/virtual-dom</guid><pubDate>Fri, 03 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;virtual-dom&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#virtual-dom&quot; aria-label=&quot;virtual dom permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Virtual DOM&lt;/h3&gt;
 &lt;p&gt;Virtual DOM이란 뭔가?? 왜 사용하는가??   &lt;/p&gt;
 &lt;h4 id=&quot;브라우저-렌더링&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EB%A0%8C%EB%8D%94%EB%A7%81&quot; aria-label=&quot;브라우저 렌더링 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;브라우저 렌더링&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://world-one.github.io/posts/browser-rendering,&quot; title=&quot;브라우저 렌더링 간단 정리&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Browser Rendering&lt;/a&gt;   &lt;/p&gt;
