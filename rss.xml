@@ -1,6 +1,84 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 Aug 2020 13:04:30 GMT</lastBuildDate><item><title><![CDATA[webpack and babel]]></title><description><![CDATA[웹팩과 바벨 알아보기]]></description><link>https://world-one.github.io/posts/webpack-babel</link><guid isPermaLink="false">https://world-one.github.io/posts/webpack-babel</guid><pubDate>Sat, 25 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;webpack-babel&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#webpack-babel&quot; aria-label=&quot;webpack babel permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;webpack, babel&lt;/h3&gt;
-&lt;p&gt;웹팩과 바벨은 웹 어플리케이션을 제작할 때 없어서는 안 될 기반 기술이다.&lt;/p&gt;
-&lt;h4 id=&quot;babel&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#babel&quot; aria-label=&quot;babel permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;babel&lt;/h4&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 Aug 2020 14:25:56 GMT</lastBuildDate><item><title><![CDATA[webpack]]></title><description><![CDATA[웹팩과 바벨 알아보기]]></description><link>https://world-one.github.io/posts/webpack</link><guid isPermaLink="false">https://world-one.github.io/posts/webpack</guid><pubDate>Sun, 02 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;webpack&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#webpack&quot; aria-label=&quot;webpack permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;webpack&lt;/h3&gt;
+&lt;p&gt;모듈 번들러&lt;br&gt;
+모듈은 각 리소스 파일이고, 번들은 웹팩 실행 후에 나오는 결과 파일이다.&lt;br&gt;
+여러 리소스를 사용자에게 전달하기 좋은 형태로 만들 수 있다.&lt;/p&gt;
+&lt;h4 id=&quot;웹팩이-필요한-이유&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%9B%B9%ED%8C%A9%EC%9D%B4-%ED%95%84%EC%9A%94%ED%95%9C-%EC%9D%B4%EC%9C%A0&quot; aria-label=&quot;웹팩이 필요한 이유 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;웹팩이 필요한 이유&lt;/h4&gt;
+&lt;p&gt;기존의 웹페이지와 다른 방식의 SPA, 즉 단일 페이지 애플리케이션은 수백의 자바스크립트 파일을 포함한다.&lt;br&gt;
+그렇기에 기존의 방식으로 무리가 있다.   &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn add webpack webpack-cli&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4 id=&quot;webpackconfigjs&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#webpackconfigjs&quot; aria-label=&quot;webpackconfigjs permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;webpack.config.js&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const path = requrie(&amp;#39;path&amp;#39;);
+
+module.exports = {
+  entry: &amp;#39;./src/index.js&amp;#39;, //입력 파일
+  output: {
+    filename: &amp;#39;main.js&amp;#39;,
+    path: path.resolve(__dirname, &amp;#39;dist&amp;#39;), //dist 폴더에 main.js 번들 파일을 생성
+  },
+  mode: &amp;#39;production&amp;#39;,
+  optimization: { minimize: [] },
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;생성된 번들 파일은 전체가 즉시실행 함수로 묶여있다.&lt;br&gt;
+웹팩 런타임 코드가 상단에 추가된다.&lt;br&gt;
+내가 만든 코드는 즉시 실행함수의 매개 변수로 들어간다.&lt;/p&gt;
+&lt;h4 id=&quot;loader&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#loader&quot; aria-label=&quot;loader permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;loader&lt;/h4&gt;
+&lt;p&gt;모듈을 입력 받아서 원하는 형태로 변환 후 새로운 모듈을 출력해주는 함수&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;babel-loader&lt;/li&gt;
+&lt;li&gt;css-loader&lt;/li&gt;
+&lt;li&gt;style-loader&lt;/li&gt;
+&lt;li&gt;file-loader : 그대로 복사해서 dist 폴더에 복사본을 만든다.&lt;/li&gt;
+&lt;li&gt;raw-loader : 내용을 자바스크립트 코드로 가져온다.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;url-loader : 크기가 작은 이미지 파일만 번들 파일에 포함&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;module: {
+rules: [
+{
+  test: /\.(png|jpg|gif)$/,
+  use: [
+    {
+      loader: &amp;#39;url-loader&amp;#39;,
+      options: {
+        limit: 8192,
+      }
+...&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;fallback 옵션으로 크기가 큰 파일을 다른 로더가 처리할 수 있다. 따로 입력하지 않을 경우 file-loader가 처리한다.   &lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;plugin&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#plugin&quot; aria-label=&quot;plugin permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;plugin&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn add clean-webpack-plugin html-webpack-plugin&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;clean-webpack-plugin은 웹팩 실행시 dist 폴더를 정리한다.   &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const { CleanWebpackPlugin } = require(&amp;#39;clean-webpack-plugin&amp;#39;);
+const HtmlWebpackPlugin = require(&amp;#39;html-webpack-plugin&amp;#39;);
+
+module.exports = {
+  plugins: [
+    new CleanWebpackPlugin(), //dist 폴더 정리
+    new HtmlWebpackPlugin({ //index.html을 생성, 번들파일이 자동으로 추가된다.
+      template: &amp;#39;./template/index.html&amp;#39;, //기반으로 할 파일
+    });
+  ]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;DefinePlugin : 문자열 대체&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;div&amp;gt;{`버전 ${APP_VERSION}`}&amp;lt;/div&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;plugins: [
+new webpack.DefinePlugin({
+APP_VERSION: ‘“1.2.3”’,
+TEN: ‘10’
+});
+]&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;- ProvidePlugin : 미리 설정한 모듈을 자동으로 등록&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;plugins: [
+new webpack.ProvidePlugin({
+React: ‘react’,
+$: ‘jquery’,
+});
+]&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[babel]]></title><description><![CDATA[웹팩과 바벨 알아보기]]></description><link>https://world-one.github.io/posts/webpack-babel</link><guid isPermaLink="false">https://world-one.github.io/posts/webpack-babel</guid><pubDate>Sat, 01 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;babel&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#babel&quot; aria-label=&quot;babel permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;babel&lt;/h3&gt;
 &lt;p&gt;입력과 출력이 모두 자바스크립트 코드다.   &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;ES6를 ES5 코드로 변환&lt;/li&gt;
@@ -2462,7 +2540,36 @@ net.ipv6.conf.lo.disable_ipv6 = 1&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sysctl -p
 cat /proc/sys/net/ipv6/conf/all/disable_ipv6&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;해당 내용은 아래 포스팅을 보며 따라한 것을 필요한 것만 정리해둔 것입니다.&lt;br&gt;
-&lt;a href=&quot;https://blog.lael.be/post/8319&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://blog.lael.be/post/8319&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Markdown]]></title><description><![CDATA[마크다운 언어에 대해 정리해보자!]]></description><link>https://world-one.github.io/posts/Markdown</link><guid isPermaLink="false">https://world-one.github.io/posts/Markdown</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;a href=&quot;https://blog.lael.be/post/8319&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://blog.lael.be/post/8319&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby.js]]></title><description><![CDATA[정적사이트 생성기 Gatsby]]></description><link>https://world-one.github.io/posts/Gatsby.js</link><guid isPermaLink="false">https://world-one.github.io/posts/Gatsby.js</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;github page를 이용한 정적 사이트로 기술용 블로그를 만들자라는 결심을 하고 설치를 했지만 방치한지 몇 주가 지났다.&lt;/p&gt;
+&lt;p&gt;처음 막연하게 검색을 해보니 Jekyll, Gatsby가 눈에 띄었다.&lt;/p&gt;
+&lt;p&gt;둘 다 마크다운 언어로 포스팅을 할 수 있었으면 테마도 쉽게 적용할 수 있었다.&lt;/p&gt;
+&lt;p&gt;react에 대한 관심이 있었던 터라 Gatsby로 웹사이트를 구성해보았다.&lt;/p&gt;
+&lt;p&gt;우선은 별도의 수정 없이 있는 그대로 테마만 적용하여 사용해보려한다.&lt;/p&gt;
+&lt;h3 id=&quot;install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install&quot; aria-label=&quot;install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;install&lt;/h3&gt;
+&lt;p&gt;gatsby-starter-lumen 테마가 단순하니 보기 좋아 무작정 설치를 했다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npx gatsby new gatsby-starter-lumen https://github.com/alxshelepenok/gatsby-starter-lumen
+cd gatsby-starter-lumen
+gatsby develop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;설치가 완료되면 로컬환경에서 돌려볼 수 있다.&lt;br&gt;
+gatsby를 따로 설치 하진 않았기에 yarn으로 실행했다.    &lt;/p&gt;
+&lt;p&gt;package.json에서 보면 여러 실행 명령어가 있다.&lt;br&gt;
+이 중 develop, deploy 정도만 사용할 듯 싶다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;scripts&amp;quot;: {
+    &amp;quot;develop&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby develop&amp;quot;,
+    &amp;quot;build&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build&amp;quot;,
+    &amp;quot;deploy&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public -b master&amp;quot;,
+    &amp;quot;clean&amp;quot;: &amp;quot;rimraf .cache public&amp;quot;,
+    &amp;quot;flow&amp;quot;: &amp;quot;flow&amp;quot;,
+    &amp;quot;lint:js&amp;quot;: &amp;quot;eslint --cache --ext .js,.jsx .&amp;quot;,
+    &amp;quot;lint:scss&amp;quot;: &amp;quot;stylelint \&amp;quot;src/**/*.scss\&amp;quot;&amp;quot;,
+    &amp;quot;lint&amp;quot;: &amp;quot;concurrently \&amp;quot;yarn run lint:js\&amp;quot; \&amp;quot;yarn run lint:scss\&amp;quot; \&amp;quot;yarn flow\&amp;quot;&amp;quot;,
+    &amp;quot;test&amp;quot;: &amp;quot;jest --config ./jest/jest-config.js&amp;quot;,
+    &amp;quot;test:coverage&amp;quot;: &amp;quot;jest --coverage --config ./jest/jest-config.js&amp;quot;,
+    &amp;quot;test:watch&amp;quot;: &amp;quot;jest --watch --config ./jest/jest-config.js&amp;quot;
+  },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;deploy를 실행하니 알아서 github에 commit되고 gitpage가 세팅된다.&lt;/p&gt;
+&lt;p&gt;몇 주 전에 세팅했던 터라 빼먹은게 있을거 같다. 다시 만들게 되면 좀 헤맬지도 모르겠다.&lt;/p&gt;
+&lt;p&gt;개별 프로젝트를 만들어서 정적사이트 제작시 gitpage에 대해 정리를 해봐야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Markdown]]></title><description><![CDATA[마크다운 언어에 대해 정리해보자!]]></description><link>https://world-one.github.io/posts/Markdown</link><guid isPermaLink="false">https://world-one.github.io/posts/Markdown</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#header&quot;&gt;header&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#list&quot;&gt;list&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#blockquote&quot;&gt;blockquote&lt;/a&gt;&lt;/li&gt;
@@ -2562,33 +2669,4 @@ __strong__
 &lt;em&gt;em&lt;/em&gt;&lt;br&gt;
 &lt;strong&gt;strong&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;strong&lt;/strong&gt;&lt;br&gt;
-&lt;del&gt;del&lt;/del&gt;   &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby.js]]></title><description><![CDATA[정적사이트 생성기 Gatsby]]></description><link>https://world-one.github.io/posts/Gatsby.js</link><guid isPermaLink="false">https://world-one.github.io/posts/Gatsby.js</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;github page를 이용한 정적 사이트로 기술용 블로그를 만들자라는 결심을 하고 설치를 했지만 방치한지 몇 주가 지났다.&lt;/p&gt;
-&lt;p&gt;처음 막연하게 검색을 해보니 Jekyll, Gatsby가 눈에 띄었다.&lt;/p&gt;
-&lt;p&gt;둘 다 마크다운 언어로 포스팅을 할 수 있었으면 테마도 쉽게 적용할 수 있었다.&lt;/p&gt;
-&lt;p&gt;react에 대한 관심이 있었던 터라 Gatsby로 웹사이트를 구성해보았다.&lt;/p&gt;
-&lt;p&gt;우선은 별도의 수정 없이 있는 그대로 테마만 적용하여 사용해보려한다.&lt;/p&gt;
-&lt;h3 id=&quot;install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install&quot; aria-label=&quot;install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;install&lt;/h3&gt;
-&lt;p&gt;gatsby-starter-lumen 테마가 단순하니 보기 좋아 무작정 설치를 했다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npx gatsby new gatsby-starter-lumen https://github.com/alxshelepenok/gatsby-starter-lumen
-cd gatsby-starter-lumen
-gatsby develop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;설치가 완료되면 로컬환경에서 돌려볼 수 있다.&lt;br&gt;
-gatsby를 따로 설치 하진 않았기에 yarn으로 실행했다.    &lt;/p&gt;
-&lt;p&gt;package.json에서 보면 여러 실행 명령어가 있다.&lt;br&gt;
-이 중 develop, deploy 정도만 사용할 듯 싶다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;scripts&amp;quot;: {
-    &amp;quot;develop&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby develop&amp;quot;,
-    &amp;quot;build&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build&amp;quot;,
-    &amp;quot;deploy&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public -b master&amp;quot;,
-    &amp;quot;clean&amp;quot;: &amp;quot;rimraf .cache public&amp;quot;,
-    &amp;quot;flow&amp;quot;: &amp;quot;flow&amp;quot;,
-    &amp;quot;lint:js&amp;quot;: &amp;quot;eslint --cache --ext .js,.jsx .&amp;quot;,
-    &amp;quot;lint:scss&amp;quot;: &amp;quot;stylelint \&amp;quot;src/**/*.scss\&amp;quot;&amp;quot;,
-    &amp;quot;lint&amp;quot;: &amp;quot;concurrently \&amp;quot;yarn run lint:js\&amp;quot; \&amp;quot;yarn run lint:scss\&amp;quot; \&amp;quot;yarn flow\&amp;quot;&amp;quot;,
-    &amp;quot;test&amp;quot;: &amp;quot;jest --config ./jest/jest-config.js&amp;quot;,
-    &amp;quot;test:coverage&amp;quot;: &amp;quot;jest --coverage --config ./jest/jest-config.js&amp;quot;,
-    &amp;quot;test:watch&amp;quot;: &amp;quot;jest --watch --config ./jest/jest-config.js&amp;quot;
-  },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;deploy를 실행하니 알아서 github에 commit되고 gitpage가 세팅된다.&lt;/p&gt;
-&lt;p&gt;몇 주 전에 세팅했던 터라 빼먹은게 있을거 같다. 다시 만들게 되면 좀 헤맬지도 모르겠다.&lt;/p&gt;
-&lt;p&gt;개별 프로젝트를 만들어서 정적사이트 제작시 gitpage에 대해 정리를 해봐야겠다.&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;del&gt;del&lt;/del&gt;   &lt;/p&gt;</content:encoded></item></channel></rss>
