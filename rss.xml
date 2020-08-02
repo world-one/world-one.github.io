@@ -1,4 +1,242 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 26 Jul 2020 06:25:40 GMT</lastBuildDate><item><title><![CDATA[React Hook]]></title><description><![CDATA[리액트 훅 정리]]></description><link>https://world-one.github.io/posts/react-hook</link><guid isPermaLink="false">https://world-one.github.io/posts/react-hook</guid><pubDate>Sat, 25 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;리액트-훅react-hook&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%9B%85react-hook&quot; aria-label=&quot;리액트 훅react hook permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;리액트 훅(React Hook)&lt;/h3&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Blog By Se-il]]></title><description><![CDATA[웹개발 내용 정리 및 공부용 블로그]]></description><link>https://world-one.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 Aug 2020 13:04:30 GMT</lastBuildDate><item><title><![CDATA[webpack and babel]]></title><description><![CDATA[웹팩과 바벨 알아보기]]></description><link>https://world-one.github.io/posts/webpack-babel</link><guid isPermaLink="false">https://world-one.github.io/posts/webpack-babel</guid><pubDate>Sat, 25 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;webpack-babel&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#webpack-babel&quot; aria-label=&quot;webpack babel permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;webpack, babel&lt;/h3&gt;
+&lt;p&gt;웹팩과 바벨은 웹 어플리케이션을 제작할 때 없어서는 안 될 기반 기술이다.&lt;/p&gt;
+&lt;h4 id=&quot;babel&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#babel&quot; aria-label=&quot;babel permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;babel&lt;/h4&gt;
+&lt;p&gt;입력과 출력이 모두 자바스크립트 코드다.   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ES6를 ES5 코드로 변환&lt;/li&gt;
+&lt;li&gt;리액트 JSX 문법 변환&lt;/li&gt;
+&lt;li&gt;타입스크립트&lt;/li&gt;
+&lt;li&gt;코드 압축&lt;/li&gt;
+&lt;li&gt;실험적인 문법도 사용 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn add 
+  @babel/core
+  @babel/cli
+  @babel/plugin-transform-arrow-functions
+  @babel/plugin-transform-template-literals
+  @babel/preset-react&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 id=&quot;babelcli로-실행하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#babelcli%EB%A1%9C-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0&quot; aria-label=&quot;babelcli로 실행하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;@babel/cli로 실행하기&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//code.js
+const element = &amp;lt;div&amp;gt;babel test&amp;lt;/div&amp;gt;; //JSX 문법
+const text = `element type is ${element.type}`; //리터럴 문법
+const add = (a, b) =&amp;gt; a + b; //arrow function&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npx babel src/code.js 
+  --presets=@babel/preset-react 
+  --plugins=@babel/plugin-transform-template-literals,
+  @babel/plugin-transform-arrow-functions&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//변환 후
+const element = React.createElement(&amp;#39;div&amp;#39;, null, &amp;#39;babel test&amp;#39;);
+const text = &amp;#39;element type is &amp;#39;.concat(element.type);
+const add = function (a, b) {
+  return a+b;
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;babel config file
+바벨 6까지는 .babelrc 파일로 관리,&lt;br&gt;
+버전 7부터는 babel.config.js로 관리하는 걸 추천…?    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const presets = [&amp;#39;@babel/preset-react&amp;#39;];
+const plugins = [
+  &amp;#39;@babel/plugin-transform-teamplate-literals&amp;#39;,
+  &amp;#39;@babel/plugin-transform-arrow-functions&amp;#39;
+];
+
+module.exports = { presets, plugins };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//실행
+npx babel src/code.js
+
+npx babel src/code.js --out-file dist.js
+npm babel src --out-dir dist&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 id=&quot;babel-loader&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#babel-loader&quot; aria-label=&quot;babel loader permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;babel loader&lt;/h5&gt;
+&lt;p&gt;웹팹의 babel-loader를 이용하여 실행   &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn add webpack webpack-cli babel-loader&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//webpack.config.js
+const path = require(&amp;#39;path&amp;#39;)&amp;#39;
+
+module.exports = {
+  entry: &amp;#39;./src/code.js&amp;#39;, //번들링할 파일 지정
+  output: {
+    path: path.resolve(__dirname, &amp;#39;dist&amp;#39;),
+    filename: &amp;#39;code.bundle.js&amp;#39;, //번들링 결과를 dist/code.bundle.js로 저장
+  },
+  module: {
+    rules: [ 
+      { 
+        test: /\.js$/, 
+        use: &amp;#39;babel-loader&amp;#39; //babel.config.js의 설정 파일이 사용된다.
+      }
+    ]
+  },
+  optimization: { minimizer: [] ,} //코드 압축 기능 해제
+};&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npx webpack&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 id=&quot;babelcore를-이용하여-실행&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#babelcore%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%98%EC%97%AC-%EC%8B%A4%ED%96%89&quot; aria-label=&quot;babelcore를 이용하여 실행 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;@babel/core를 이용하여 실행&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//runBabel.js
+const babel = require(&amp;#39;@babel/core&amp;#39;);
+const ffs = require(&amp;#39;fs&amp;#39;);
+
+const filename = &amp;#39;./src/code.js&amp;#39;;
+const source = fss.readFileSync(filename, &amp;#39;utf8&amp;#39;); //컴파일 할 파일
+const presets = [&amp;#39;@babel/preset-react&amp;#39;];
+const plugins = [
+  &amp;#39;@babel/plugin-transform-teamplate-literals&amp;#39;,
+  &amp;#39;@babel/plugin-transform-arrow-functions&amp;#39;,
+];
+const { code } = babel.transformSync(source, { // transformSync 바벨 실행
+  filename,
+  presets,
+  plugins,
+  configFile: false, //babel.config.js 설정 파일을 사용하지 않는다.
+});
+
+console.log(code); //파일 저장은 fs 모듈을 이용&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이 방법은 자유도가 높다.   &lt;/p&gt;
+&lt;p&gt;바벨의 컴파일 단계&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;파싱 단계 : 입력된 코드로부터 AST(abstract syntax tree) 생성&lt;/li&gt;
+&lt;li&gt;변환 단계 : AST를 원하는 형태로 변환&lt;/li&gt;
+&lt;li&gt;생성 단계 : AST를 코드로 출력&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const { ast } = babel.transformSync(sources, { // 코드는 생성하지 않고 AST만 생성, 공통 부분만 추가 
+  filename,
+  ast: true,
+  code: false,
+  presets,
+  configFile: false,
+});
+
+const { code: code1 } = babel.transformSync(ast, source, { // transformSync 바벨 실행
+  filename,  
+  plugins : [&amp;#39;@babel/plugin-transform-teamplate-literals&amp;#39;],
+  configFile: false, //babel.config.js 설정 파일을 사용하지 않는다.
+});
+
+const { code: code2 } = babel.transformSync(ast, source, { // transformSync 바벨 실행
+  filename,
+  plugins: [&amp;#39;@babel/plugin-transform-arrow-functions&amp;#39;],
+  configFile: false, //babel.config.js 설정 파일을 사용하지 않는다.
+});&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;설정의 갯수가 많아질수록 효율이 높아지는 방식이라고 한다.    &lt;/p&gt;
+&lt;h5 id=&quot;확장성과-유연성&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%ED%99%95%EC%9E%A5%EC%84%B1%EA%B3%BC-%EC%9C%A0%EC%97%B0%EC%84%B1&quot; aria-label=&quot;확장성과 유연성 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;확장성과 유연성&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;extends
+다른 설정 파일을 가져와서 확장할 수 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//common/.babelrc
+{
+  &amp;quot;presets&amp;quot;: [&amp;quot;@babel/preset-react&amp;quot;],
+  &amp;quot;plugins&amp;quot;: [
+    [
+      &amp;quot;@babel/plugin-transfrom-template-literals&amp;quot;,
+      {
+        &amp;quot;loose&amp;quot;: true //concat 대신 + 연산자 사용
+      }
+    ]
+  ]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//src/example-extends/.babelrc
+{
+  &amp;quot;extends&amp;quot;: &amp;quot;../../common/.babelrc&amp;quot;,
+  &amp;quot;plugins&amp;quot;: [
+    &amp;quot;@babel/plugin-transform-arrow-functions&amp;quot;,
+    &amp;quot;@babel/plugin-transform-template-literals&amp;quot;,
+  ]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;다른 파일의 설정을 가져온다. 기존 플러그인의 옵션은 사라지고 현재 파일의 옵션으로 적용된다.   &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;env 속성으로 환경별 설정&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
+....,
+&amp;quot;env&amp;quot;: {
+&amp;quot;production&amp;quot;: {
+  &amp;quot;presets&amp;quot;: [&amp;quot;minify&amp;quot;]
+}
+}
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//바벨 환경 설정
+process.env.BABEL_ENV || process.env.NODE_ENV || &amp;quot;development&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;MAC OS : NODE_ENV=production npx babel ./src/example-env
+Window OS : set NODE_ENV=production &amp;amp;&amp;amp; npx babel ./src/example-env&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;overrides 속성으로 파일별 설정&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;{
+&amp;quot;presets&amp;quot;: [&amp;quot;@babel/preset-react&amp;quot;],
+&amp;quot;plugins&amp;quot;: [&amp;quot;@babel/plugin-transform-template-literals&amp;quot;],
+&amp;quot;overrides&amp;quot;: [ //파일별로 설정 가능
+{
+  &amp;quot;include&amp;quot;: &amp;quot;./service1&amp;quot;, //적용
+  &amp;quot;excute&amp;quot;: &amp;quot;./service1/code2.js&amp;quot;, //제외
+  &amp;quot;plugins&amp;quot;: [&amp;quot;@babel/plugin-transform-arrow-functions&amp;quot;]
+}
+]
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;전체지역-설정&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%A0%84%EC%B2%B4%EC%A7%80%EC%97%AD-%EC%84%A4%EC%A0%95&quot; aria-label=&quot;전체지역 설정 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;전체/지역 설정&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;전체 설정&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;root/babel.config.js&lt;/li&gt;
+&lt;li&gt;root/package.json&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;지역 설정&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;src/directory/.babelrc&lt;/li&gt;
+&lt;li&gt;src/directory/package.json(babel 설정이 있을 경우)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h5 id=&quot;core-js&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#core-js&quot; aria-label=&quot;core js permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;core-js&lt;/h5&gt;
+&lt;p&gt;바벨에서 폴리필을 위해 공식적으로 제공&lt;br&gt;
+가장 간단한 방법은 자바스크립트 코드로 불러오는 것이다.   &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import &amp;#39;core-js&amp;#39;;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이는 해당 모듈의 모든 폴리필을 포함한다.   &lt;/p&gt;
+&lt;p&gt;웹팩에서 설정할 때는 아래와 같이 entry 속성에 추가해주면 된다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;module.exportss = {
+  entry: [&amp;#39;core-js&amp;#39;, &amp;#39;./src/index.js&amp;#39;],
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;필요 없는 폴리필까지 번들에 포한되어 파일의 크기가 커진다.&lt;br&gt;
+만약 파일의 크기가 문제가 된다면 필요한 폴리필만 호출해서 사용한다.   &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;import &amp;#39;core-js/features/promise&amp;#39;;
+import &amp;#39;core-js/features/object/values&amp;#39;;
+import &amp;#39;core-js/features/array/includes&amp;#39;;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5 id=&quot;babelpreset-env&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#babelpreset-env&quot; aria-label=&quot;babelpreset env permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;@babel/preset-env&lt;/h5&gt;
+&lt;p&gt;실행환경에 대한 정보를 설정하면 자동으로 필요한 기능을 주입해준다.   &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;//babel.config.js
+const presets = [
+  [
+    &amp;#39;@babel/preset-env&amp;#39;,
+    {
+      targets: &amp;#39;&amp;gt; 0.25%, not dead&amp;#39;, 
+    },
+  ],
+];
+
+module.exports = { presets };&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;targets: ’&gt; 0.25%, not dead’, : 시장점유율이 0.25% 이상이고 업데이트가 종료되지 않은 브라우저&lt;br&gt;
+browserslist라는 패키지의 문법   &lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;const presets = [
+  [
+    &amp;#39;@babel/preset-env&amp;#39;,
+    {
+      targets: {
+        chrome: &amp;#39;40&amp;#39;,
+      },
+      useBuiltiIns: &amp;#39;entry&amp;#39;, // 폴리필과 관련된 설정, entry는 지원하는 브라우저에서 필요한 폴리필만 포함, 
+                            //usage는 코드에서 사용된 기능의 폴리필만 불러옴
+      corejs: { version: 3, proposals: true }, //babel에게 corejs의 버전을 알려준다.
+    }
+  ]
+];&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;usage를 이용하덜라도 불필요한 폴리필을 불러오기도 하는데 이는 변수의 타입을 추론하지 못하기 때문이다.&lt;br&gt;
+그래서 보수적으로 폴리필을 추가하게 되는데, 이는 타입스크립트를 사용하면 해결된다.   &lt;/p&gt;</content:encoded></item><item><title><![CDATA[React Hook]]></title><description><![CDATA[리액트 훅 정리]]></description><link>https://world-one.github.io/posts/react-hook</link><guid isPermaLink="false">https://world-one.github.io/posts/react-hook</guid><pubDate>Sat, 25 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;리액트-훅react-hook&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%A6%AC%EC%95%A1%ED%8A%B8-%ED%9B%85react-hook&quot; aria-label=&quot;리액트 훅react hook permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;리액트 훅(React Hook)&lt;/h3&gt;
 &lt;p&gt;훅은 함수형 컴포넌트에 기능을 추가할 때 사용하는 함수다.
 함수형 컴포넌트에서 상태값을 사용 할 수 있다.
 훅이 나오면서 클래스보다는 함수형 컴포넌트로 작성하는 걸 추천한다.&lt;/p&gt;
@@ -205,7 +443,11 @@ useDebugValue(value ? &amp;#39;on&amp;#39; : &amp;#39;off&amp;#39;);
 return [value, onToggle];
 }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Virtual DOM]]></title><description><![CDATA[버추얼 돔이란 무엇인가??]]></description><link>https://world-one.github.io/posts/virtual-dom</link><guid isPermaLink="false">https://world-one.github.io/posts/virtual-dom</guid><pubDate>Fri, 03 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;virtual-dom&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#virtual-dom&quot; aria-label=&quot;virtual dom permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Virtual DOM&lt;/h3&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Network Basics]]></title><description><![CDATA[네트워크 기초, 반복해서 읽기]]></description><link>https://world-one.github.io/posts/network-basics</link><guid isPermaLink="false">https://world-one.github.io/posts/network-basics</guid><pubDate>Fri, 03 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;모두의-네트워크&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AA%A8%EB%91%90%EC%9D%98-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC&quot; aria-label=&quot;모두의 네트워크 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;모두의 네트워크&lt;/h3&gt;
+&lt;p&gt;쉽게 네트워크에 대해 풀어쓴 책이다.&lt;br&gt;
+반복해서 보다보면 네트워크에 대한 전체적 흐름에 대해 파악할 수 있을 것 같다.&lt;br&gt;
+꾸준히 정리하면서 읽어보자.&lt;/p&gt;
+&lt;h4 id=&quot;목차&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AA%A9%EC%B0%A8&quot; aria-label=&quot;목차 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;목차&lt;/h4&gt;</content:encoded></item><item><title><![CDATA[Virtual DOM]]></title><description><![CDATA[버추얼 돔이란 무엇인가??]]></description><link>https://world-one.github.io/posts/virtual-dom</link><guid isPermaLink="false">https://world-one.github.io/posts/virtual-dom</guid><pubDate>Fri, 03 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;virtual-dom&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#virtual-dom&quot; aria-label=&quot;virtual dom permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Virtual DOM&lt;/h3&gt;
 &lt;p&gt;Virtual DOM이란 뭔가?? 왜 사용하는가??   &lt;/p&gt;
 &lt;h4 id=&quot;브라우저-렌더링&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EB%A0%8C%EB%8D%94%EB%A7%81&quot; aria-label=&quot;브라우저 렌더링 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;브라우저 렌더링&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://world-one.github.io/posts/browser-rendering,&quot; title=&quot;브라우저 렌더링 간단 정리&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;Browser Rendering&lt;/a&gt;   &lt;/p&gt;
@@ -281,11 +523,7 @@ Virtual DOM은 렌더링은 일어나지 않으며,&lt;br&gt;
 기본 개념을 이해하는 건 이 정도면 충분할 것 같다.&lt;/p&gt;
 &lt;h4 id=&quot;참고사이트&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EC%B0%B8%EA%B3%A0%EC%82%AC%EC%9D%B4%ED%8A%B8&quot; aria-label=&quot;참고사이트 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;참고사이트&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://medium.com/@enro2414_40667/virtual-dom-%EB%B2%84%EC%B6%94%EC%96%BC-%EB%8F%94-%EA%B0%80%EC%83%81-%EB%8F%94-%EC%9D%84-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-1c44606ea9b1&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://medium.com/@enro2414_40667/virtual-dom-%EB%B2%84%EC%B6%94%EC%96%BC-%EB%8F%94-%EA%B0%80%EC%83%81-%EB%8F%94-%EC%9D%84-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EC%96%B4%EB%B3%B4%EC%9E%90-1c44606ea9b1&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.holaxprogramming.com/2018/04/15/react-optimizing-virtual-dom-explained/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.holaxprogramming.com/2018/04/15/react-optimizing-virtual-dom-explained/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Network Basics]]></title><description><![CDATA[네트워크 기초, 반복해서 읽기]]></description><link>https://world-one.github.io/posts/network-basics</link><guid isPermaLink="false">https://world-one.github.io/posts/network-basics</guid><pubDate>Fri, 03 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;모두의-네트워크&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AA%A8%EB%91%90%EC%9D%98-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC&quot; aria-label=&quot;모두의 네트워크 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;모두의 네트워크&lt;/h3&gt;
-&lt;p&gt;쉽게 네트워크에 대해 풀어쓴 책이다.&lt;br&gt;
-반복해서 보다보면 네트워크에 대한 전체적 흐름에 대해 파악할 수 있을 것 같다.&lt;br&gt;
-꾸준히 정리하면서 읽어보자.&lt;/p&gt;
-&lt;h4 id=&quot;목차&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#%EB%AA%A9%EC%B0%A8&quot; aria-label=&quot;목차 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;목차&lt;/h4&gt;</content:encoded></item><item><title><![CDATA[Typescript, webpack, babel setting without framework]]></title><description><![CDATA[프레임워크 없이 typescript, webpack, babel 등 세팅하기]]></description><link>https://world-one.github.io/posts/set-typescript-webpack-babel</link><guid isPermaLink="false">https://world-one.github.io/posts/set-typescript-webpack-babel</guid><pubDate>Wed, 01 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;javascript-환경-설정하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#javascript-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0&quot; aria-label=&quot;javascript 환경 설정하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;javascript 환경 설정하기&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.holaxprogramming.com/2018/04/15/react-optimizing-virtual-dom-explained/&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://www.holaxprogramming.com/2018/04/15/react-optimizing-virtual-dom-explained/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Typescript, webpack, babel setting without framework]]></title><description><![CDATA[프레임워크 없이 typescript, webpack, babel 등 세팅하기]]></description><link>https://world-one.github.io/posts/set-typescript-webpack-babel</link><guid isPermaLink="false">https://world-one.github.io/posts/set-typescript-webpack-babel</guid><pubDate>Wed, 01 Jul 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h3 id=&quot;javascript-환경-설정하기&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#javascript-%ED%99%98%EA%B2%BD-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0&quot; aria-label=&quot;javascript 환경 설정하기 permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;javascript 환경 설정하기&lt;/h3&gt;
 &lt;p&gt;typescript, webpack, babel 등등&lt;/p&gt;
 &lt;h4 id=&quot;directory-structure&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#directory-structure&quot; aria-label=&quot;directory structure permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;directory structure&lt;/h4&gt;
 &lt;h4 id=&quot;tsc&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#tsc&quot; aria-label=&quot;tsc permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;tsc&lt;/h4&gt;
@@ -2224,36 +2462,7 @@ net.ipv6.conf.lo.disable_ipv6 = 1&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;sysctl -p
 cat /proc/sys/net/ipv6/conf/all/disable_ipv6&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;해당 내용은 아래 포스팅을 보며 따라한 것을 필요한 것만 정리해둔 것입니다.&lt;br&gt;
-&lt;a href=&quot;https://blog.lael.be/post/8319&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://blog.lael.be/post/8319&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby.js]]></title><description><![CDATA[정적사이트 생성기 Gatsby]]></description><link>https://world-one.github.io/posts/Gatsby.js</link><guid isPermaLink="false">https://world-one.github.io/posts/Gatsby.js</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;github page를 이용한 정적 사이트로 기술용 블로그를 만들자라는 결심을 하고 설치를 했지만 방치한지 몇 주가 지났다.&lt;/p&gt;
-&lt;p&gt;처음 막연하게 검색을 해보니 Jekyll, Gatsby가 눈에 띄었다.&lt;/p&gt;
-&lt;p&gt;둘 다 마크다운 언어로 포스팅을 할 수 있었으면 테마도 쉽게 적용할 수 있었다.&lt;/p&gt;
-&lt;p&gt;react에 대한 관심이 있었던 터라 Gatsby로 웹사이트를 구성해보았다.&lt;/p&gt;
-&lt;p&gt;우선은 별도의 수정 없이 있는 그대로 테마만 적용하여 사용해보려한다.&lt;/p&gt;
-&lt;h3 id=&quot;install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install&quot; aria-label=&quot;install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;install&lt;/h3&gt;
-&lt;p&gt;gatsby-starter-lumen 테마가 단순하니 보기 좋아 무작정 설치를 했다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npx gatsby new gatsby-starter-lumen https://github.com/alxshelepenok/gatsby-starter-lumen
-cd gatsby-starter-lumen
-gatsby develop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;설치가 완료되면 로컬환경에서 돌려볼 수 있다.&lt;br&gt;
-gatsby를 따로 설치 하진 않았기에 yarn으로 실행했다.    &lt;/p&gt;
-&lt;p&gt;package.json에서 보면 여러 실행 명령어가 있다.&lt;br&gt;
-이 중 develop, deploy 정도만 사용할 듯 싶다.&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;scripts&amp;quot;: {
-    &amp;quot;develop&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby develop&amp;quot;,
-    &amp;quot;build&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build&amp;quot;,
-    &amp;quot;deploy&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public -b master&amp;quot;,
-    &amp;quot;clean&amp;quot;: &amp;quot;rimraf .cache public&amp;quot;,
-    &amp;quot;flow&amp;quot;: &amp;quot;flow&amp;quot;,
-    &amp;quot;lint:js&amp;quot;: &amp;quot;eslint --cache --ext .js,.jsx .&amp;quot;,
-    &amp;quot;lint:scss&amp;quot;: &amp;quot;stylelint \&amp;quot;src/**/*.scss\&amp;quot;&amp;quot;,
-    &amp;quot;lint&amp;quot;: &amp;quot;concurrently \&amp;quot;yarn run lint:js\&amp;quot; \&amp;quot;yarn run lint:scss\&amp;quot; \&amp;quot;yarn flow\&amp;quot;&amp;quot;,
-    &amp;quot;test&amp;quot;: &amp;quot;jest --config ./jest/jest-config.js&amp;quot;,
-    &amp;quot;test:coverage&amp;quot;: &amp;quot;jest --coverage --config ./jest/jest-config.js&amp;quot;,
-    &amp;quot;test:watch&amp;quot;: &amp;quot;jest --watch --config ./jest/jest-config.js&amp;quot;
-  },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;deploy를 실행하니 알아서 github에 commit되고 gitpage가 세팅된다.&lt;/p&gt;
-&lt;p&gt;몇 주 전에 세팅했던 터라 빼먹은게 있을거 같다. 다시 만들게 되면 좀 헤맬지도 모르겠다.&lt;/p&gt;
-&lt;p&gt;개별 프로젝트를 만들어서 정적사이트 제작시 gitpage에 대해 정리를 해봐야겠다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Markdown]]></title><description><![CDATA[마크다운 언어에 대해 정리해보자!]]></description><link>https://world-one.github.io/posts/Markdown</link><guid isPermaLink="false">https://world-one.github.io/posts/Markdown</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
+&lt;a href=&quot;https://blog.lael.be/post/8319&quot; target=&quot;_blank&quot; rel=&quot;nofollow noopener noreferrer&quot;&gt;https://blog.lael.be/post/8319&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Markdown]]></title><description><![CDATA[마크다운 언어에 대해 정리해보자!]]></description><link>https://world-one.github.io/posts/Markdown</link><guid isPermaLink="false">https://world-one.github.io/posts/Markdown</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#header&quot;&gt;header&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#list&quot;&gt;list&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#blockquote&quot;&gt;blockquote&lt;/a&gt;&lt;/li&gt;
@@ -2353,4 +2562,33 @@ __strong__
 &lt;em&gt;em&lt;/em&gt;&lt;br&gt;
 &lt;strong&gt;strong&lt;/strong&gt;&lt;br&gt;
 &lt;strong&gt;strong&lt;/strong&gt;&lt;br&gt;
-&lt;del&gt;del&lt;/del&gt;   &lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;del&gt;del&lt;/del&gt;   &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby.js]]></title><description><![CDATA[정적사이트 생성기 Gatsby]]></description><link>https://world-one.github.io/posts/Gatsby.js</link><guid isPermaLink="false">https://world-one.github.io/posts/Gatsby.js</guid><pubDate>Thu, 27 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;github page를 이용한 정적 사이트로 기술용 블로그를 만들자라는 결심을 하고 설치를 했지만 방치한지 몇 주가 지났다.&lt;/p&gt;
+&lt;p&gt;처음 막연하게 검색을 해보니 Jekyll, Gatsby가 눈에 띄었다.&lt;/p&gt;
+&lt;p&gt;둘 다 마크다운 언어로 포스팅을 할 수 있었으면 테마도 쉽게 적용할 수 있었다.&lt;/p&gt;
+&lt;p&gt;react에 대한 관심이 있었던 터라 Gatsby로 웹사이트를 구성해보았다.&lt;/p&gt;
+&lt;p&gt;우선은 별도의 수정 없이 있는 그대로 테마만 적용하여 사용해보려한다.&lt;/p&gt;
+&lt;h3 id=&quot;install&quot; style=&quot;position:relative;&quot;&gt;&lt;a href=&quot;#install&quot; aria-label=&quot;install permalink&quot; class=&quot;anchor before&quot;&gt;&lt;svg aria-hidden=&quot;true&quot; focusable=&quot;false&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;install&lt;/h3&gt;
+&lt;p&gt;gatsby-starter-lumen 테마가 단순하니 보기 좋아 무작정 설치를 했다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npx gatsby new gatsby-starter-lumen https://github.com/alxshelepenok/gatsby-starter-lumen
+cd gatsby-starter-lumen
+gatsby develop&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;설치가 완료되면 로컬환경에서 돌려볼 수 있다.&lt;br&gt;
+gatsby를 따로 설치 하진 않았기에 yarn으로 실행했다.    &lt;/p&gt;
+&lt;p&gt;package.json에서 보면 여러 실행 명령어가 있다.&lt;br&gt;
+이 중 develop, deploy 정도만 사용할 듯 싶다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;quot;scripts&amp;quot;: {
+    &amp;quot;develop&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby develop&amp;quot;,
+    &amp;quot;build&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build&amp;quot;,
+    &amp;quot;deploy&amp;quot;: &amp;quot;yarn run clean &amp;amp;&amp;amp; gatsby build --prefix-paths &amp;amp;&amp;amp; gh-pages -d public -b master&amp;quot;,
+    &amp;quot;clean&amp;quot;: &amp;quot;rimraf .cache public&amp;quot;,
+    &amp;quot;flow&amp;quot;: &amp;quot;flow&amp;quot;,
+    &amp;quot;lint:js&amp;quot;: &amp;quot;eslint --cache --ext .js,.jsx .&amp;quot;,
+    &amp;quot;lint:scss&amp;quot;: &amp;quot;stylelint \&amp;quot;src/**/*.scss\&amp;quot;&amp;quot;,
+    &amp;quot;lint&amp;quot;: &amp;quot;concurrently \&amp;quot;yarn run lint:js\&amp;quot; \&amp;quot;yarn run lint:scss\&amp;quot; \&amp;quot;yarn flow\&amp;quot;&amp;quot;,
+    &amp;quot;test&amp;quot;: &amp;quot;jest --config ./jest/jest-config.js&amp;quot;,
+    &amp;quot;test:coverage&amp;quot;: &amp;quot;jest --coverage --config ./jest/jest-config.js&amp;quot;,
+    &amp;quot;test:watch&amp;quot;: &amp;quot;jest --watch --config ./jest/jest-config.js&amp;quot;
+  },&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;deploy를 실행하니 알아서 github에 commit되고 gitpage가 세팅된다.&lt;/p&gt;
+&lt;p&gt;몇 주 전에 세팅했던 터라 빼먹은게 있을거 같다. 다시 만들게 되면 좀 헤맬지도 모르겠다.&lt;/p&gt;
+&lt;p&gt;개별 프로젝트를 만들어서 정적사이트 제작시 gitpage에 대해 정리를 해봐야겠다.&lt;/p&gt;</content:encoded></item></channel></rss>
